@@ -45,11 +45,11 @@ surface, no database schema, no unshipped roadmap.
 - [x] wiki/annotating-lectures.md
 
 ## Wiki — reference
-- [ ] wiki/privacy-and-data.md
-- [ ] wiki/limits-and-caps.md
-- [ ] wiki/troubleshooting.md
-- [ ] wiki/faq.md
-- [ ] wiki/glossary.md
+- [x] wiki/privacy-and-data.md
+- [x] wiki/limits-and-caps.md
+- [x] wiki/troubleshooting.md
+- [x] wiki/faq.md
+- [x] wiki/glossary.md
 
 ## Publish
 - [ ] AGENTS.md rewritten for a non-course KB
