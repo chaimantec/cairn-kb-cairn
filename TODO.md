@@ -1,0 +1,59 @@
+# KB build — Cairn (the extension itself)
+
+Not a course KB: there are no lectures, transcripts, or slide decks. The sources
+are Cairn's public surfaces — the landing page at cairnstudy.com, the published
+privacy policy, the Chrome Web Store listing, and the shipped extension UI at
+version 1.3.0.
+
+**Scope decision (2026-08-26):** user-facing only. What Cairn does, how to use
+it, what it costs, where data goes. No internal architecture, no API route
+surface, no database schema, no unshipped roadmap.
+
+## Raw sources
+- [ ] raw/privacy-policy.md — verbatim published policy
+- [ ] raw/changelog.md — verbatim release notes
+- [ ] raw/landing-copy.md — the public site's own words
+- [ ] sources.md — where each came from, and the date
+
+## Wiki — the product
+- [ ] wiki/what-is-cairn.md
+- [ ] wiki/install-and-setup.md
+- [ ] wiki/adding-courses.md
+- [ ] wiki/progress-tracking.md
+- [ ] wiki/accounts-and-sync.md
+- [ ] wiki/catalog.md
+- [ ] wiki/live-tab.md
+- [ ] wiki/traces-and-notes.md
+- [ ] wiki/ratings.md
+- [ ] wiki/stats-dashboard.md
+
+## Wiki — the study chat
+- [ ] wiki/study-chat.md
+- [ ] wiki/bring-your-own-key.md
+- [ ] wiki/models-and-thinking.md
+- [ ] wiki/chat-tools.md
+- [ ] wiki/chat-memory.md
+- [ ] wiki/images-in-chat.md
+- [ ] wiki/managing-chats.md
+- [ ] wiki/asking-good-questions.md
+
+## Wiki — knowledge bases
+- [ ] wiki/knowledge-bases.md
+- [ ] wiki/attach-a-knowledge-base.md
+- [ ] wiki/building-a-knowledge-base.md
+- [ ] wiki/kb-repo-layout.md
+- [ ] wiki/annotating-lectures.md
+
+## Wiki — reference
+- [ ] wiki/privacy-and-data.md
+- [ ] wiki/limits-and-caps.md
+- [ ] wiki/troubleshooting.md
+- [ ] wiki/faq.md
+- [ ] wiki/glossary.md
+
+## Publish
+- [ ] AGENTS.md rewritten for a non-course KB
+- [ ] INDEX.md — annotated table of contents
+- [ ] kb.json
+- [ ] Link sweep (no unresolvable relative links)
+- [ ] Commit and push to chaimantec/cairn-kb-cairn
