@@ -28,14 +28,14 @@ surface, no database schema, no unshipped roadmap.
 - [x] wiki/stats-dashboard.md
 
 ## Wiki — the study chat
-- [ ] wiki/study-chat.md
-- [ ] wiki/bring-your-own-key.md
-- [ ] wiki/models-and-thinking.md
-- [ ] wiki/chat-tools.md
-- [ ] wiki/chat-memory.md
-- [ ] wiki/images-in-chat.md
-- [ ] wiki/managing-chats.md
-- [ ] wiki/asking-good-questions.md
+- [x] wiki/study-chat.md
+- [x] wiki/bring-your-own-key.md
+- [x] wiki/models-and-thinking.md
+- [x] wiki/chat-tools.md
+- [x] wiki/chat-memory.md
+- [x] wiki/images-in-chat.md
+- [x] wiki/managing-chats.md
+- [x] wiki/asking-good-questions.md
 
 ## Wiki — knowledge bases
 - [ ] wiki/knowledge-bases.md
