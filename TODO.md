@@ -52,8 +52,8 @@ surface, no database schema, no unshipped roadmap.
 - [x] wiki/glossary.md
 
 ## Publish
-- [ ] AGENTS.md rewritten for a non-course KB
-- [ ] INDEX.md — annotated table of contents
-- [ ] kb.json
+- [x] AGENTS.md rewritten for a non-course KB
+- [x] INDEX.md — annotated table of contents
+- [x] kb.json
 - [ ] Link sweep (no unresolvable relative links)
 - [ ] Commit and push to chaimantec/cairn-kb-cairn

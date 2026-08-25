@@ -1,45 +1,86 @@
 # How this knowledge base is organized
 
-This repo is the knowledge base for **CAIRN — Cairn — YouTube Course Tracker & Study Assistant**. It is read
-by Cairn's in-extension AI chat, which fetches files over
-raw.githubusercontent.com and follows relative markdown links.
+This repo is the knowledge base for **Cairn itself** — the Chrome extension —
+rather than for a course taught in it. It exists so that Cairn's own study
+assistant, and any other agent pointed at it, can answer questions about what
+Cairn is, how to use it, and what it does with a user's data, from documentation
+rather than from guesswork.
+
+It follows the same layout contract as a course knowledge base, so the same
+reading tools navigate it: `INDEX.md` at the root, relative markdown links
+between pages.
 
 ## Layout
 
-| Path                | Contents                                                      |
-| ------------------- | ------------------------------------------------------------- |
-| `INDEX.md`          | Entry point. Course summary + annotated table of contents.    |
-| `wiki/`             | Durable pages: one per lecture, plus cross-lecture topics.    |
-| `raw/slides/`       | Full text of every slide, numbered. Slide N = PDF page N.     |
-| `raw/transcripts/`  | Lecture transcripts with `[MM:SS]` paragraph marks.           |
-| `raw/pdfs/`         | Slides and handouts downloaded from the course website.       |
-| `sources.md`        | Crawl inventory: source URL → local file, fetch date.         |
-| `TODO.md`           | Build tracker. Unchecked boxes are outstanding work.          |
+| Path | Contents |
+|---|---|
+| `INDEX.md` | Entry point. What Cairn is, plus an annotated table of contents. |
+| `wiki/` | Every durable page, grouped as product, chat, knowledge bases, reference. |
+| `raw/` | Verbatim copies of Cairn's public documents — the source material. |
+| `sources.md` | Where each source came from, and when. |
+| `kb.json` | Machine-readable self-description: coverage, method, caveats. |
+| `TODO.md` | Build tracker. Unchecked boxes are outstanding work. |
+
+There is no `raw/transcripts/`, `raw/slides/` or `raw/pdfs/` here: this KB has
+no lectures behind it.
+
+## Scope — read this before adding anything
+
+This knowledge base documents Cairn **as a user meets it**. That boundary was
+set deliberately when it was built, and it is the main thing a future
+maintainer needs to respect.
+
+**In scope:** what the extension does, how to use every feature, what things
+cost, what the limits are, what happens to a user's data, how knowledge bases
+work and how to build or attach one, and how to get unstuck.
+
+**Out of scope:** how Cairn is built. No server architecture, no API endpoint
+reference, no database schema, no source-code layout, no description of features
+that have not shipped. Cairn's source is not public and nothing here is quoted
+from it.
+
+Where a user question genuinely turns on where data goes — which key is stored
+where, what reaches a model provider — the answer comes from the published
+privacy policy and is cited to it, at the level of detail the policy itself
+uses. That is user-facing fact, not architecture.
 
 ## Conventions
 
-- **INDEX.md is the front door.** The chat reads it first on every conversation.
-  Every wiki page must appear there with a one-line description of what it holds.
-  An unindexed page is effectively invisible.
-- **Relative links only** (`[gradient descent](gradient-descent.md)`,
-  `[slides](../raw/pdfs/lecture03.pdf)`). Absolute GitHub URLs break when the
-  repo is renamed or forked.
-- **Cite everything.** Claims trace back to a transcript timestamp or a slide.
-- **Never invent course content.** If the transcript is unclear at some point,
-  say so on the page. Do not fill the gap from outside knowledge — the chat
-  presents these pages as authoritative material from this course.
-- **Prose over fragments.** The chat quotes these pages to learners; bullet
-  fragments quote badly.
-- **Math in LaTeX**: `$...$` inline, `$$...$$` displayed. Renders both in
-  Cairn's chat and on github.com. Never inside a code fence — that shows the
-  source instead of the formula. Define each symbol on first use, and follow the
-  course's own notation rather than a tidier one, since the learner is comparing
-  the page against the lecturer's board.
-- **Transcripts stay verbatim.** Captions spell notation out as speech ("theta
-  sub j"); reconstructing it as $\theta_j$ belongs in `wiki/`, not in
-  `raw/transcripts/`.
+- **`INDEX.md` is the front door.** It is read first in every conversation.
+  Every page must appear there with a one-line description of what it holds. An
+  unindexed page is effectively invisible.
+- **Relative links only** (`[ratings](ratings.md)`,
+  `[the policy](../raw/privacy-policy.md)`). Absolute GitHub URLs break when the
+  repo is renamed or forked. Absolute links to the outside web — the store
+  listing, cairnstudy.com — are fine and expected.
+- **Describe what ships.** Every claim should be checkable against the shipped
+  extension, the store listing, the landing page, or the privacy policy. Do not
+  document intentions, roadmap items, or behaviour that only exists in a branch.
+- **Quote Cairn's own words where they are better than a paraphrase**, in
+  italics, and keep them accurate. The landing page copy is in
+  [`raw/landing-copy.md`](raw/landing-copy.md).
+- **Prose in full sentences.** The assistant quotes these pages to users, and
+  fragments quote badly. Tables are for enumerable facts — limits, permissions,
+  which tool needs what.
+- **State version-specific facts as such.** The chat and knowledge bases arrived
+  in 1.3.0; the note window changed in 1.2.0. Anchor to a version where the
+  detail is likely to move.
+- **Do not invent numbers.** Every limit in
+  [`wiki/limits-and-caps.md`](wiki/limits-and-caps.md) is one the product
+  actually enforces. If a value is unknown, leave it out rather than guessing.
 
-## Rebuilding
+## Keeping it current
 
-Built and updated by the `cairn-kb` skill. To add newly released lectures,
-append entries to `TODO.md` and re-run the skill — it only does unchecked work.
+The extension changes; this repo does not change with it automatically. When a
+release ships:
+
+1. Update [`raw/changelog.md`](raw/changelog.md) with the new version's notes.
+2. Fix the pages the release affects — a changed limit, a new setting, a renamed
+   tab.
+3. Update `INDEX.md` if pages were added or removed. A stale index is the most
+   common way a knowledge base rots: the assistant reads it, trusts it, and never
+   finds the new page.
+4. Update `kb.json` — at minimum `coverage.appVersion` and `updated`.
+5. Re-copy [`raw/privacy-policy.md`](raw/privacy-policy.md) if the published
+   policy's "Last updated" date has moved, and re-check
+   [`wiki/privacy-and-data.md`](wiki/privacy-and-data.md) against it.

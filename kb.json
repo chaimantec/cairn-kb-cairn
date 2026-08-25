@@ -1,0 +1,46 @@
+{
+  "kbVersion": 1,
+  "course": {
+    "code": "CAIRN",
+    "title": "Cairn — YouTube Course Tracker & Study Assistant",
+    "instructor": null,
+    "term": null,
+    "catalogId": null,
+    "courseUrl": "https://cairnstudy.com/"
+  },
+  "subject": {
+    "kind": "product-documentation",
+    "note": "This knowledge base documents the Cairn extension itself, not a course taught through it. It has no lectures, transcripts, or slide decks."
+  },
+  "coverage": {
+    "appVersion": "1.3.0",
+    "lecturesCovered": 0,
+    "lecturesTotal": 0,
+    "transcripts": 0,
+    "wikiLecturePages": 0,
+    "wikiTopicPages": 28
+  },
+  "materials": {
+    "primary": "public-documents",
+    "slideDecks": { "available": 0, "transcribed": 0 },
+    "notebooks": { "available": 0, "transcribed": 0 },
+    "method": "source-text",
+    "figuresAudited": false
+  },
+  "provenance": {
+    "builtBy": ["claude-opus-5"],
+    "sources": [
+      "https://cairnstudy.com/",
+      "https://cairnstudy.com/privacy.html",
+      "https://chromewebstore.google.com/detail/cairn/ipoiephjmljacojnhacbkbfbelicifim",
+      "Cairn 1.3.0 as shipped"
+    ],
+    "caveats": [
+      "Scope is user-facing only by design: no server architecture, API surface, database schema, or unshipped features are documented.",
+      "Describes version 1.3.0. Limits, defaults and UI labels are version-specific and will drift as the extension is updated.",
+      "Model catalogs and default models come from providers that change them independently of Cairn releases."
+    ]
+  },
+  "entryPoint": "INDEX.md",
+  "updated": "2026-08-26"
+}
