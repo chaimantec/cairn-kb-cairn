@@ -38,11 +38,11 @@ surface, no database schema, no unshipped roadmap.
 - [x] wiki/asking-good-questions.md
 
 ## Wiki — knowledge bases
-- [ ] wiki/knowledge-bases.md
-- [ ] wiki/attach-a-knowledge-base.md
-- [ ] wiki/building-a-knowledge-base.md
-- [ ] wiki/kb-repo-layout.md
-- [ ] wiki/annotating-lectures.md
+- [x] wiki/knowledge-bases.md
+- [x] wiki/attach-a-knowledge-base.md
+- [x] wiki/building-a-knowledge-base.md
+- [x] wiki/kb-repo-layout.md
+- [x] wiki/annotating-lectures.md
 
 ## Wiki — reference
 - [ ] wiki/privacy-and-data.md
