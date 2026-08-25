@@ -10,10 +10,10 @@ it, what it costs, where data goes. No internal architecture, no API route
 surface, no database schema, no unshipped roadmap.
 
 ## Raw sources
-- [ ] raw/privacy-policy.md — verbatim published policy
-- [ ] raw/changelog.md — verbatim release notes
-- [ ] raw/landing-copy.md — the public site's own words
-- [ ] sources.md — where each came from, and the date
+- [x] raw/privacy-policy.md — verbatim published policy
+- [x] raw/changelog.md — verbatim release notes
+- [x] raw/landing-copy.md — the public site's own words
+- [x] sources.md — where each came from, and the date
 
 ## Wiki — the product
 - [ ] wiki/what-is-cairn.md
