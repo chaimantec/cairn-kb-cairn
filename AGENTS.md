@@ -49,8 +49,8 @@ uses. That is user-facing fact, not architecture.
 - **`INDEX.md` is the front door.** It is read first in every conversation.
   Every page must appear there with a one-line description of what it holds. An
   unindexed page is effectively invisible.
-- **Relative links only** (`[ratings](ratings.md)`,
-  `[the policy](../raw/privacy-policy.md)`). Absolute GitHub URLs break when the
+- **Relative links only** — from a page in `wiki/`, a sibling is written bare
+  and `raw/` is reached with `../`. Absolute GitHub URLs break when the
   repo is renamed or forked. Absolute links to the outside web — the store
   listing, cairnstudy.com — are fine and expected.
 - **Describe what ships.** Every claim should be checkable against the shipped

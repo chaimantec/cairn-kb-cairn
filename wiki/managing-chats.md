@@ -21,8 +21,11 @@ carries a history control that opens the manager.
 Two different searches, which is worth knowing because it is easy to reach for
 the wrong one:
 
-- **Find in chat** searches *within the open conversation*, with next and
-  previous matches — Enter and Shift+Enter — and Escape to close.
+- **Find in chat** searches *within the open conversation*. **Ctrl+F**, or
+  **Cmd+F** on a Mac, opens it; Enter and Shift+Enter step through the next and
+  previous matches, and Escape closes it. Cairn claims that shortcut on purpose
+  — otherwise it would reach Chrome and open the browser's find bar over the
+  YouTube tab underneath, which is not the document you are reading.
 - **Search chats**, in the manager, searches *across your saved chats*, with an
   option to search message text rather than just titles. This is how you find
   the conversation where you worked out the thing about eigenvalues three weeks
