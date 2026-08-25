@@ -16,16 +16,16 @@ surface, no database schema, no unshipped roadmap.
 - [x] sources.md — where each came from, and the date
 
 ## Wiki — the product
-- [ ] wiki/what-is-cairn.md
-- [ ] wiki/install-and-setup.md
-- [ ] wiki/adding-courses.md
-- [ ] wiki/progress-tracking.md
-- [ ] wiki/accounts-and-sync.md
-- [ ] wiki/catalog.md
-- [ ] wiki/live-tab.md
-- [ ] wiki/traces-and-notes.md
-- [ ] wiki/ratings.md
-- [ ] wiki/stats-dashboard.md
+- [x] wiki/what-is-cairn.md
+- [x] wiki/install-and-setup.md
+- [x] wiki/adding-courses.md
+- [x] wiki/progress-tracking.md
+- [x] wiki/accounts-and-sync.md
+- [x] wiki/catalog.md
+- [x] wiki/live-tab.md
+- [x] wiki/traces-and-notes.md
+- [x] wiki/ratings.md
+- [x] wiki/stats-dashboard.md
 
 ## Wiki — the study chat
 - [ ] wiki/study-chat.md
