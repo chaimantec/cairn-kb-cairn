@@ -86,13 +86,15 @@ source in their own right since none of them appears on a public page.
 - [x] `kb.json` — provenance source and caveat
 - [x] Link sweep and commit
 
-## Revision 2026-08-26 — Gemini, the new OpenRouter default, rate limits
+## Revision 2026-08-26 — rate limits, and the new OpenRouter default
 
-- [x] Add **Gemini** as a third chat provider across
-      `wiki/bring-your-own-key.md` (provider table, the free-key on-ramp),
-      `wiki/models-and-thinking.md` (defaults table),
-      `wiki/study-chat.md`, `wiki/install-and-setup.md`, `wiki/glossary.md`,
-      `wiki/faq.md`, `wiki/troubleshooting.md` and `INDEX.md`.
+- [x] ~~Add **Gemini** as a third chat provider~~ — **added, then reverted the
+      same day.** Gemini was withheld from the extension's UI before release:
+      the free tier a learner would sign up for allows only a few requests a
+      minute, and one question is several requests, so it rate-limited during
+      ordinary study. It is still supported end to end in the extension, just
+      not offered, so this is a re-enable rather than a rebuild. See the
+      deferred item below.
 - [x] OpenRouter default is now `openai/gpt-5.6-luna`. Removed every claim that
       the default is `anthropic/claude-sonnet-5` and the "most expensive option
       in the picker" framing built on it — `wiki/models-and-thinking.md`,
@@ -104,12 +106,12 @@ source in their own right since none of them appears on a public page.
       distinction in `wiki/limits-and-caps.md`. The load-bearing fact is that
       **one question is several requests** — a KB read, a search and the answer
       are separate calls — which is why a per-minute allowance goes sooner than
-      a user expects. Gemini's free tier is where it shows first.
-- [x] Note that Google counts limits **per project, not per key**, so a second
-      key does not help. This is the fix people reach for first.
-- [x] Note in `wiki/privacy-and-data.md` that Google's free-tier terms permit
-      training on prompts and responses while the paid tier does not — relevant
-      precisely because the free key is the recommended on-ramp.
+      a user expects.
+- [x] The rate-limit material **survives the Gemini revert**, rewritten to be
+      provider-general. The load-bearing insight is not Gemini-specific: one
+      question is several requests, so any per-minute allowance goes sooner than
+      "a few questions a minute" implies. It applies to DeepSeek and OpenRouter
+      and will apply to whatever is added next.
 - [x] Version references are gone throughout — `INDEX.md`, `sources.md`,
       `kb.json`, `wiki/study-chat.md`, `wiki/what-is-cairn.md`.
       **Deliberate policy, per the maker (2026-08-26): this KB does not track
@@ -122,6 +124,19 @@ source in their own right since none of them appears on a public page.
 - [x] `sources.md` and `kb.json` — Google and OpenRouter limit/terms sources.
 
 ### Open — depends on the extension, not the KB
+
+- [ ] **If Gemini is re-offered in the extension, restore its documentation.**
+      It is hidden by a single list in the extension, not removed, so this can
+      come back quickly. What to put back, all of it written once and reverted
+      in commit history rather than lost: the provider row and free-key on-ramp
+      in `wiki/bring-your-own-key.md`; the `gemini-3.7-flash` default row in
+      `wiki/models-and-thinking.md`; the provider lists in `wiki/study-chat.md`,
+      `wiki/install-and-setup.md`, `wiki/glossary.md`, `wiki/faq.md`,
+      `wiki/troubleshooting.md` and `INDEX.md`; that Google counts limits **per
+      project, not per key** (the fix people reach for first); and the note in
+      `wiki/privacy-and-data.md` that Google's free-tier terms permit training
+      on prompts while the paid tier does not. Sources for those claims are in
+      the same reverted commit.
 - [ ] Worth checking in the extension, not the KB: the `cacheControlFormat`
       rule in pi-ai keys off the *generated model catalog*. A model id typed
       into the free-text "any OpenRouter model id" field that is not in the

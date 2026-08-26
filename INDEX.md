@@ -58,10 +58,10 @@ endpoints, or the database — and it does not describe unshipped features. See
 
 - [The study chat](wiki/study-chat.md) — what it is, how to turn it on, what it
   knows without being told, and how it writes.
-- [Bring your own key](wiki/bring-your-own-key.md) — Gemini for a free start,
-  DeepSeek for a cheap one, OpenRouter for the run of the catalog, Tavily for
-  web search; where a key is stored, what drives the bill, why rate limits
-  arrive sooner than expected, and every provider error explained.
+- [Bring your own key](wiki/bring-your-own-key.md) — DeepSeek for a cheap
+  default, OpenRouter for the run of the catalog, Tavily for web search; where a
+  key is stored, what drives the bill, why rate limits arrive sooner than
+  expected, and every provider error explained.
 - [Models and thinking levels](wiki/models-and-thinking.md) — the model picker,
   defaults, which model to pick and what it costs (a dated recommendation, not a
   standing one), arbitrary OpenRouter model ids, and when more thinking is worth

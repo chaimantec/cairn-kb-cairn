@@ -14,7 +14,6 @@ The defaults, if you do not choose:
 
 | Provider | Default model |
 |---|---|
-| Gemini | `gemini-3.7-flash` |
 | DeepSeek | `deepseek-v4-flash` |
 | OpenRouter | `openai/gpt-5.6-luna` |
 
@@ -59,12 +58,6 @@ is a reasonable middle of its own catalog, and none of them is chosen to be the
 cheapest thing available. If you saved a key and never opened the picker, it is
 worth one look — the spread between models is wide enough that the choice
 matters more than almost anything else you can change.
-
-**Gemini's default, `gemini-3.7-flash`, is free to run** on a free-tier key, and
-is why Gemini is the easiest place to start. It is also where you will meet
-[rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first)
-soonest, because the free tier allows only a few requests a minute and one
-question can take several.
 
 Prefer a direct DeepSeek key for sustained use. OpenRouter is what you add when
 you want the choice — one key reaching many vendors' catalogs, plus any model id

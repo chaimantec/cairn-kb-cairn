@@ -54,26 +54,23 @@ publishes one under your nickname, and you can switch it back.
 
 **Why does the AI chat need my own API key?**
 So there is no subscription and no markup — you pay the provider at cost. It
-supports Gemini, DeepSeek and OpenRouter, plus Tavily for optional web search.
-A Gemini key is free to create with a Google account, so starting costs nothing.
-See [bring your own key](bring-your-own-key.md).
+supports DeepSeek and OpenRouter, plus Tavily for optional web search. See
+[bring your own key](bring-your-own-key.md).
 
 **Which model should I use?**
 `deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — the
 recommendation as of **2026-08-26**, and the DeepSeek default. Check the date:
 providers reprice and replace models often, so this is a snapshot rather than a
-standing answer. If you would rather not pay anything to try it, start with a
-free Gemini key instead and accept the tighter rate limit. Add OpenRouter when
-you want the choice — one key reaching many vendors' catalogs, and any model id
+standing answer. Add OpenRouter when you want the choice — one key reaching many vendors' catalogs, and any model id
 they publish. See [models and thinking levels](models-and-thinking.md).
 
 **Why do I keep getting rate-limited?**
 Because one question is usually several requests: the assistant reads a
 knowledge-base file, maybe searches, then answers, and each step is its own call
-to your provider. Gemini's free tier allows only a few a minute, so this shows
-up there first. Wait a minute, ask fewer and larger questions, or enable billing.
-A second key does not help — Google counts the limit per project. See
-[rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first).
+to your provider. So a limit quoted per minute arrives much sooner than "a few
+questions a minute" suggests. Wait a moment and ask again, ask fewer and larger
+questions, and check which tier your key is on. See
+[rate limits](bring-your-own-key.md#rate-limits).
 
 **Why is a Claude model more expensive?**
 Its price. `anthropic/claude-sonnet-5` is roughly $2 per million input tokens

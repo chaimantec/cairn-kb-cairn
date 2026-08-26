@@ -43,15 +43,13 @@
       "Cairn as shipped",
       "chaimantec (Cairn's maker), direct statement, 2026-08-26",
       "https://api-docs.deepseek.com/quick_start/pricing",
-      "https://ai.google.dev/gemini-api/docs/rate-limits",
-      "https://ai.google.dev/gemini-api/terms",
       "https://openrouter.ai/docs/api-reference/limits"
     ],
     "caveats": [
       "Scope is user-facing only by design: no server architecture, API surface, database schema, or unshipped features are documented.",
-      "Limits, defaults and UI labels are version-specific and drift as the extension is updated. Pages describe the current shipped behaviour rather than a pinned release.",
+      "Limits, defaults and UI labels drift as the extension is updated, and this KB does not track version numbers — the fetch dates in sources.md are the only staleness signal it carries.",
       "Model catalogs and default models come from providers that change them independently of Cairn releases.",
-      "Provider rate limits are described in kind rather than in numbers: Google publishes a user's actual per-model limits only on their own AI Studio rate-limit page, not in its documentation.",
+      "Provider rate limits are described in kind rather than in numbers, because each provider sets them per key and tier and publishes them on its own dashboard rather than in documentation.",
       "Authorship and the Death Stranding inspiration come from Cairn's maker directly rather than from a published page. The model recommendation is dated 2026-08-26 and is explicitly not a standing one: providers reprice and replace models independently of Cairn's releases."
     ]
   },

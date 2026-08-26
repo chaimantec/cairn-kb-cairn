@@ -80,14 +80,8 @@ go to Tavily. If the course has a [knowledge base](knowledge-bases.md), its
 public files are fetched from GitHub.
 
 Those providers handle that data under their own privacy policies. The relevant
-ones are Google (Gemini), DeepSeek, OpenRouter — which forwards to whichever
-underlying model you select — Tavily, and GitHub.
-
-**One thing worth knowing before you pick a free Gemini key:** Google's terms
-for the free tier of the Gemini API allow it to use your prompts and responses
-to improve its products. The paid tier does not. That is Google's policy rather
-than Cairn's, and it applies to whichever key you save — so if your questions
-are sensitive, that is a reason to use a paid key or another provider.
+ones are DeepSeek, OpenRouter — which forwards to whichever underlying model you
+select — Tavily, and GitHub.
 
 **Your API key** is encrypted at rest on Cairn's servers and never sent back to
 your browser. The policy is candid about the limits: this defends against a

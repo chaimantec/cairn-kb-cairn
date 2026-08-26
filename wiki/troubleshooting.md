@@ -41,7 +41,7 @@ sign in again; Cairn keeps working locally until you do. Nothing is lost.
 Two possible reasons, in order:
 
 1. **You are not signed in.** The chat requires an account.
-2. **No API key is saved.** Add a Gemini, DeepSeek or OpenRouter key in **Settings → AI
+2. **No API key is saved.** Add a DeepSeek or OpenRouter key in **Settings → AI
    chat**. See [bring your own key](bring-your-own-key.md).
 
 ## The chat gives an error
@@ -50,7 +50,7 @@ Two possible reasons, in order:
 |---|---|
 | *"…rejected the API key. Check it in Settings."* | Re-paste the key; check for stray whitespace and that it has not been revoked. |
 | *"…reports insufficient credit for this request."* | Top up with your provider. Cairn cannot see your balance. |
-| *"…is rate-limiting this key…"* | Your provider's limit. Wait a minute, or use a different model. Common on Gemini's free tier — see [rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first). |
+| *"…is rate-limiting this key…"* | Your provider's limit. Wait a moment, or use a different model. See [rate limits](bring-your-own-key.md#rate-limits). |
 | *"…is having trouble right now."* | Provider outage. Try again shortly. |
 | *"This conversation is too long for the selected model."* | Start a new chat. See [managing chats](managing-chats.md). |
 | *"Too many requests. Slow down a moment."* | Cairn's own rate limit. Pause briefly. |
@@ -79,19 +79,18 @@ authority.
 Your provider is refusing requests for a moment, not Cairn. The reason it
 arrives sooner than expected is that **one question is usually several requests**
 — the assistant reads a knowledge-base file, perhaps searches, then writes the
-answer, and each step is its own call.
+answer, and each step is its own call. A burst of quick follow-ups is the worst
+pattern for a per-minute allowance.
 
-On **Gemini's free tier** this is normal rather than exceptional: the allowance
-is a few requests a minute. Wait a minute and ask again, ask fewer and larger
-questions, switch to a Flash-Lite model, or enable billing on the key. Creating
-a second key does not help — Google counts the limit per project, not per key.
+Wait a moment and ask again; nothing is lost. Then ask fewer and larger
+questions, and check which tier your key is on, since free and entry tiers are
+where this shows up.
 
 On **OpenRouter** the message usually reflects the vendor serving your chosen
-model, not your OpenRouter balance, so topping up will not clear it; switching
-to a model from another vendor generally will.
+model rather than your OpenRouter balance, so topping up will not clear it;
+switching to a model from another vendor generally will.
 
-Full detail, including the daily cap, is in
-[rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first).
+More in [rate limits](bring-your-own-key.md#rate-limits).
 
 ## The chat does not know anything about my course
 

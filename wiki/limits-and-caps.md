@@ -56,9 +56,8 @@ which surface as their own messages — and those are the ones you are far more
 likely to meet. Cairn cannot raise them and does not know what they are. The
 number that matters is not questions per minute but **requests** per minute: one
 question can take five or six calls, because reading a knowledge-base file,
-searching the web and writing the answer are separate requests. On Gemini's free
-tier, which allows only a few a minute, that arrives quickly. See
-[rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first).
+searching the web and writing the answer are separate requests. See
+[rate limits](bring-your-own-key.md#rate-limits).
 
 ## Knowledge bases
 
