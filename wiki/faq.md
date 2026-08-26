@@ -61,31 +61,15 @@ supports DeepSeek and OpenRouter, plus Tavily for optional web search. See
 `deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — the
 recommendation as of **2026-08-26**, and the DeepSeek default. Check the date:
 providers reprice and replace models often, so this is a snapshot rather than a
-standing answer. It is cheap, and it caches
-the repeated part of a conversation at about a thirtieth of the normal price,
-which is most of what you would otherwise be paying for — and its off-peak rate,
-covering most evenings and all weekend, is half of that again. Add OpenRouter
-when you want the choice — one key reaching many vendors' catalogs, and any
-model id they publish. See [models and thinking levels](models-and-thinking.md).
+standing answer. Add OpenRouter when you want the choice — one key reaching many
+vendors' catalogs, and any model id they publish. See
+[models and thinking levels](models-and-thinking.md).
 
-**Does reading a knowledge base make the chat expensive?**
-Less than you would think. The first time the assistant opens a page it is new
-text and is billed in full, but from then on it stays in the conversation and is
-re-read at the much cheaper cached rate. You pay for a page once and keep it for
-the rest of the chat — which is part of why the first question costs more than
-the ones that follow it.
-
-**Do I need to do anything to get prompt caching?**
-No. It is handled for you on every provider Cairn supports, including Claude
-models, which are the one family that has to be asked explicitly. There is no
-setting. A long conversation is cheaper per turn than its token count suggests.
-
-**Why is a Claude model more expensive, then?**
-Its list price. `anthropic/claude-sonnet-5` is roughly $2 per million input
-tokens and $10 per million output, against `deepseek-v4-flash`'s $0.44 and $1.32
-at peak — halving off-peak. It is also the OpenRouter default in 1.3.0, so if
-you saved an OpenRouter key and never opened the model picker, that is what you
-are being billed for. See [models and thinking levels](models-and-thinking.md).
+**Why is a Claude model more expensive?**
+Its price. `anthropic/claude-sonnet-5` is roughly $2 per million input tokens
+and $10 per million output, against `deepseek-v4-flash`'s $0.44 and $1.32. It is
+also the OpenRouter default in 1.3.0, so if you saved an OpenRouter key and
+never opened the model picker, that is what you are being billed for.
 
 **Where is my key stored?**
 Encrypted on Cairn's servers, never in your browser and never sent back to it.

@@ -21,13 +21,12 @@ additive: with it, `web_search` and `web_fetch` appear; without it, they do not.
 
 **If you are only going to set up one, make it DeepSeek.** A DeepSeek key
 running `deepseek-v4-flash` is the recommendation for ordinary study use **as of
-2026-08-26** — a dated recommendation, not a permanent one, since providers
-reprice and replace models far faster than this page is revised: it is cheap per token, it re-reads the repeated part of a conversation at
-about a thirtieth of the normal price, and its off-peak rate — most evenings and
-all weekend — is half of that again. **OpenRouter is what you
-add when you want the choice** — one key reaching many vendors' catalogs, plus
-any model id OpenRouter publishes, so you can pick on whatever grounds matter to
-you that day: price, speed, whether it reads
+2026-08-26** — dated, not permanent, since providers reprice and replace models
+faster than this page is revised. It is cheap, and cheaper still off-peak.
+
+**OpenRouter is what you add when you want the choice** — one key reaching many
+vendors' catalogs, plus any model id OpenRouter publishes, so you can pick on
+whatever grounds matter to you that day: price, speed, whether it reads
 [images](images-in-chat.md), or simply a model you would rather use. Saving both
 and switching per question is a perfectly good setup. See
 [models and thinking levels](models-and-thinking.md).
@@ -59,21 +58,12 @@ account deletes your keys.
 
 ## What it costs
 
-Whatever your provider charges for the model you pick, and nothing else. Three
+Whatever your provider charges for the model you pick, and nothing else. Two
 things drive the bill more than anything:
 
 - **The model.** Prices across the catalog differ by more than an order of
   magnitude — a frontier model costs many times what a fast, cheap one does.
   See [models and thinking levels](models-and-thinking.md).
-- **How well that model caches.** Because the earlier messages are re-sent with
-  every new one, most of a long conversation is text the provider has already
-  seen, and every provider charges less to re-read it. How much less varies a
-  lot: DeepSeek reads cached text at about a thirtieth of its normal input
-  price, where most providers discount to somewhere between a tenth and a half.
-  Caching itself is handled for you on every provider Cairn supports — it is not
-  a setting, and there is nothing to turn on. Check the provider's own dashboard
-  if a chat feels more expensive than it should; Cairn's usage readout is only
-  an estimate.
 - **Conversation length.** Your browser holds the conversation and sends the
   earlier messages along with each new one, so a long chat costs more per turn
   than a short one. Starting a fresh chat for a new question is the single
@@ -81,12 +71,7 @@ things drive the bill more than anything:
   each turn.
 
 Reading a [knowledge base](knowledge-bases.md) also costs tokens — the assistant
-is genuinely reading files — but it is what makes the answers specific, and it
-is cheaper than it first looks. The first read of a page is new text, so it is
-billed at the full rate; from then on it sits in the conversation and is re-read
-at the cached rate with every later turn. You pay for a page once and keep it
-for the rest of the chat. That is another reason the first question in a
-conversation costs more than the ones after it.
+is genuinely reading files — but it is what makes the answers specific.
 
 ## If the provider rejects the request
 

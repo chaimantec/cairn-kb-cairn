@@ -70,9 +70,6 @@ an OpenRouter key and never chose a model, that is what you are on.
 [what it costs](bring-your-own-key.md) and
 [models and thinking levels](models-and-thinking.md).
 
-Prompt caching is not something to check: it is handled for you on every
-provider, so it is not the explanation for a surprising bill.
-
 Cairn cannot see your spend — the usage readout is an estimate, and it is wrong
 for any model it has no price data for. Your provider's dashboard is the
 authority.

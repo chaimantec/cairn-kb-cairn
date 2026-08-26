@@ -107,3 +107,10 @@ source in their own right since none of them appears on a public page.
 - [x] Record that the first read of a knowledge-base page is billed uncached and
       every later turn re-reads it from cache — `wiki/bring-your-own-key.md`,
       `wiki/faq.md`
+- [x] **Scope trim, 2026-08-26:** removed the prompt-caching explanations added
+      earlier in the day — per-provider caching behaviour, cache-hit vs
+      cache-miss price rows, which library sets cache markers, the first-read
+      cache miss. All of it was investigation notes rather than anything a user
+      acts on. What survives is the dated recommendation, plain model prices, and
+      the warning about the expensive OpenRouter default. Keep this KB to what a
+      user meets.

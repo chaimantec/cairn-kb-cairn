@@ -27,71 +27,31 @@ Your choice is remembered as your default for future chats.
 
 ## The recommendation, as of 2026-08-26: `deepseek-v4-flash`, direct from DeepSeek
 
-> **This recommendation has a date on it, and it is not a permanent one.** It
-> was last checked on **2026-08-26**. Model catalogs and prices change every few
-> months, without notice and independently of Cairn's releases — a model that is
-> the obvious choice today can be superseded, repriced, or withdrawn well before
-> this page is next revised. If you are reading it long after that date, treat
-> everything below as a starting point to verify rather than an answer, and
-> check the providers' own pricing pages. Nothing in Cairn depends on this
-> choice: the picker will take whatever you select.
+> **Dated on purpose.** Providers reprice and replace models every few months,
+> independently of Cairn's releases and faster than this page is revised. If you
+> are reading this well after 2026-08-26, check the providers' own pricing pages
+> rather than taking it as current. The picker will take whatever you choose.
 
 If you want one answer rather than a decision, use **`deepseek-v4-flash` with a
-DeepSeek key, going to DeepSeek directly**. That is the recommendation from
-Cairn's maker, and the reason it is the DeepSeek default in the picker. Three
-things earn it that place.
+DeepSeek key, going to DeepSeek directly**. It is the DeepSeek default in the
+picker for this reason.
 
-**It is cheap.** Fast and cheap enough that the cost of a study session stops
-being something you weigh before asking a question, and most study questions are
-retrieval — finding the moment in the lecture, quoting a definition back,
-checking whether lecture 3 covered something, reading the
-[knowledge base](knowledge-bases.md) — which does not need a frontier model.
+It is cheap enough that the cost of a study session stops being something you
+weigh before asking a question, and most study questions are retrieval — finding
+the moment in the lecture, quoting a definition back, checking whether lecture 3
+covered something, reading the [knowledge base](knowledge-bases.md) — which does
+not need a frontier model. DeepSeek also charges **half price off-peak**, and
+peak is only 01:00–04:00 and 06:00–10:00 UTC on weekdays, so evening and weekend
+study is always at the lower rate.
 
-**Its caching is excellent, and caching is most of the bill.** Cairn sends the
-earlier messages along with each new one, so by the third question the majority
-of what you are paying for is text the provider has already seen. DeepSeek
-caches that repeated prefix automatically, with nothing to configure, and reads
-it back at roughly **a thirtieth** of the normal input price — a far steeper
-discount than most providers offer. A long conversation therefore costs much
-less than its length suggests.
-
-**Its off-peak rate is half price.** DeepSeek bills peak and off-peak, and peak
-is only 01:00–04:00 and 06:00–10:00 UTC on weekdays — about a fifth of the week.
-Evening and weekend study, which is when most of it happens, is off-peak.
-
-### What `deepseek-v4-flash` actually costs
-
-Per million tokens, as published on **2026-08-26**. These are the numbers most
-likely to be out of date by the time you read them — check
-[DeepSeek's pricing page](https://api-docs.deepseek.com/quick_start/pricing) for
+Per million tokens on 2026-08-26, at the peak rate — see
+[DeepSeek's pricing](https://api-docs.deepseek.com/quick_start/pricing) for
 current figures:
 
-| | Peak | Off-peak |
+| | `deepseek-v4-flash` | `anthropic/claude-sonnet-5` |
 |---|---|---|
-| Input, already cached | $0.014 | $0.007 |
-| Input, not yet cached | $0.44 | $0.22 |
-| Output | $1.32 | $0.66 |
-
-After the first question or two, most input is the cached kind. That is why a
-long conversation on this model stays cheap in a way its token count does not
-predict.
-
-### A note on caching and Claude models
-
-Anthropic's models are the one family that does not cache automatically: the
-request has to ask, by marking where the reusable prefix ends. Every other major
-provider — DeepSeek, OpenAI, Gemini, Grok — caches on its own.
-
-**This is handled for you and is not something you need to think about.** The
-library Cairn uses to talk to providers sets those markers itself for Claude
-models reached through OpenRouter, so the conversation caches the same way it
-would anywhere else. It is worth knowing only if you are comparing Cairn's costs
-against some other tool that does not do it.
-
-So a Claude model is not expensive here because of caching. It is expensive
-because of its list price: `anthropic/claude-sonnet-5` is around $2 per million
-input tokens and $10 per million output, against `deepseek-v4-flash`'s $0.44 and
-$1.32 at peak, halving off-peak.
+| Input | $0.44 | $2.00 |
+| Output | $1.32 | $10.00 |
 
 **Worth knowing about the shipped default:** the OpenRouter default in 1.3.0 is
 `anthropic/claude-sonnet-5`, the most expensive option in the picker. If you
@@ -103,9 +63,6 @@ you want the choice — one key reaching many vendors' catalogs, plus any model 
 they publish, so you are not limited to what one provider happens to offer. What
 that choice costs is then down to the model you make with it. See
 [what it costs](bring-your-own-key.md).
-
-All of the above describes providers and prices as they stood on 2026-08-26,
-not a property of the product. Both move.
 
 ## Thinking levels
 
@@ -133,8 +90,7 @@ A reasonable pattern:
 - **A strong model at higher thinking** for the moment you are actually stuck on
   the mathematics, or when you want a derivation worked through step by step.
   Switching to one for a few hard questions rather than leaving it selected for a
-  whole session is what keeps it affordable — doubly so for a Claude model, for
-  the caching reason above.
+  whole session is what keeps it affordable.
 
 You can change model mid-conversation; the change applies to the next message.
 
