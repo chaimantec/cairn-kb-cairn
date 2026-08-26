@@ -31,8 +31,7 @@ a moment, and made public.
 
 Notes surface around their moment rather than all at once. A note becomes
 "nearby" **10 seconds before** its timestamp and stops being nearby **80 seconds
-after** it — the window Cairn settled on in version 1.2.0, after an earlier and
-longer one. The effect is that a note reaches you slightly before the moment it
+after** it — the window Cairn settled on after an earlier and longer one. The effect is that a note reaches you slightly before the moment it
 was written about, and stays visible long enough to read while the lecturer is
 still on the topic.
 

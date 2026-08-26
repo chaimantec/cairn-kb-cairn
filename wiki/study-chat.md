@@ -7,7 +7,8 @@ your notes, while a lecture plays. Its whole reason for existing is context:
 second you are paused at — so you can point at something with 'this' and it
 knows what you mean."*
 
-It arrived in version **1.3.0**, alongside [knowledge bases](knowledge-bases.md).
+It arrives alongside [knowledge bases](knowledge-bases.md), which are what give
+it something specific to answer from.
 
 ## Turning it on
 

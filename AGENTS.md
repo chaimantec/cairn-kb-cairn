@@ -56,15 +56,17 @@ uses. That is user-facing fact, not architecture.
 - **Describe what ships.** Every claim should be checkable against the shipped
   extension, the store listing, the landing page, or the privacy policy. Do not
   document intentions, roadmap items, or behaviour that only exists in a branch.
+- **Do not track versions.** Chrome auto-updates the extension, so a reader is
+  always on the current build and cannot choose otherwise; "which version added
+  what" is a fact they can do nothing with. Write current behaviour in the
+  present tense and leave version numbers out, rather than pinning claims to a
+  release that will be superseded before anyone reads them.
 - **Quote Cairn's own words where they are better than a paraphrase**, in
   italics, and keep them accurate. The landing page copy is in
   [`raw/landing-copy.md`](raw/landing-copy.md).
 - **Prose in full sentences.** The assistant quotes these pages to users, and
   fragments quote badly. Tables are for enumerable facts — limits, permissions,
   which tool needs what.
-- **State version-specific facts as such.** The chat and knowledge bases arrived
-  in 1.3.0; the note window changed in 1.2.0. Anchor to a version where the
-  detail is likely to move.
 - **Do not invent numbers.** Every limit in
   [`wiki/limits-and-caps.md`](wiki/limits-and-caps.md) is one the product
   actually enforces. If a value is unknown, leave it out rather than guessing.

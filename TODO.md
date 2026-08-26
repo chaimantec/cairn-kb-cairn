@@ -2,8 +2,8 @@
 
 Not a course KB: there are no lectures, transcripts, or slide decks. The sources
 are Cairn's public surfaces — the landing page at cairnstudy.com, the published
-privacy policy, the Chrome Web Store listing, and the shipped extension UI at
-version 1.3.0.
+privacy policy, the Chrome Web Store listing, and the shipped extension UI.
+This KB does not track version numbers — see `AGENTS.md`.
 
 **Scope decision (2026-08-26):** user-facing only. What Cairn does, how to use
 it, what it costs, where data goes. No internal architecture, no API route
@@ -110,10 +110,15 @@ source in their own right since none of them appears on a public page.
 - [x] Note in `wiki/privacy-and-data.md` that Google's free-tier terms permit
       training on prompts and responses while the paid tier does not — relevant
       precisely because the free key is the recommended on-ramp.
-- [x] Version pins: the blanket "describes version 1.3.0" claim in `INDEX.md`,
-      `sources.md` and `kb.json` is gone, because these pages now describe
-      behaviour past 1.3.0. Kept the three true historical statements that the
-      chat *arrived* in 1.3.0.
+- [x] Version references are gone throughout — `INDEX.md`, `sources.md`,
+      `kb.json`, `wiki/study-chat.md`, `wiki/what-is-cairn.md`.
+      **Deliberate policy, per the maker (2026-08-26): this KB does not track
+      versions.** Chrome auto-updates the extension, so a reader is on the
+      current build and cannot choose otherwise — "which version added what" is
+      a fact they can do nothing with. Describe current behaviour and nothing
+      else. (An earlier draft of this entry dropped the pins for a different and
+      wrong reason: that these pages had moved past 1.3.0. They had not. Gemini,
+      the chat and knowledge bases are all 1.3.0, which had not yet released.)
 - [x] `sources.md` and `kb.json` — Google and OpenRouter limit/terms sources.
 
 ### Open — depends on the extension, not the KB

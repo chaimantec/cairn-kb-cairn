@@ -7,10 +7,10 @@ happens to a user's data.
 
 Cairn tracks watch progress automatically against courses you add from YouTube
 playlists, shows short timestamped notes — *traces* — that other learners left
-at the moments they left them, and syncs across devices when you sign in. Since
-1.3.0 it also has an optional AI study chat that knows which lecture is playing
-and where you are paused in it, and can read a course's compiled knowledge base
-before answering. It is made by **chaimantec** — a free, independent side
+at the moments they left them, and syncs across devices when you sign in. It
+also has an optional AI study chat that knows which lecture is playing and where
+you are paused in it, and can read a course's compiled knowledge base before
+answering. It is made by **chaimantec** — a free, independent side
 project, not affiliated with YouTube, Stanford, or MIT — and it takes its shape
 from *Death Stranding*: what you get from other learners is what they left
 behind at a hard moment, not a conversation with them.
@@ -108,4 +108,4 @@ endpoints, or the database — and it does not describe unshipped features. See
   policy, verbatim.
 - [`raw/landing-copy.md`](raw/landing-copy.md) — cairnstudy.com's own words,
   section by section.
-- [`raw/changelog.md`](raw/changelog.md) — release notes through 1.3.0.
+- [`raw/changelog.md`](raw/changelog.md) — the release notes, verbatim.

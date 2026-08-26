@@ -66,8 +66,8 @@ the browser you had them in. That is deliberate — see
 
 A signed-in session lasts **30 days**. When it lapses, a banner appears at the
 top of the sidebar offering to sign in again, and Cairn keeps working locally in
-the meantime rather than failing. Version 1.2.0 exists largely to make that
-expiry graceful.
+the meantime rather than failing. Nothing local is lost when a session lapses —
+that gracefulness is deliberate.
 
 ## Signing out, and signing in as someone else
 

@@ -42,9 +42,9 @@ public. See [traces and notes](traces-and-notes.md).
 **It syncs.** Sign in with Google and your courses, progress, notes and ratings
 follow you to any browser you sign in on. See [accounts and sync](accounts-and-sync.md).
 
-On top of those, version 1.3.0 added an optional [AI study chat](study-chat.md)
-that knows which lecture is playing and where you are paused in it, and can read
-a course's [knowledge base](knowledge-bases.md) before it answers.
+On top of those, there is an optional [AI study chat](study-chat.md) that knows
+which lecture is playing and where you are paused in it, and can read a course's
+[knowledge base](knowledge-bases.md) before it answers.
 
 ## Who it is for
 
@@ -98,7 +98,7 @@ and this knowledge base is one of them.
 - Chrome Web Store: [Cairn — YouTube Course Tracker](https://chromewebstore.google.com/detail/cairn/ipoiephjmljacojnhacbkbfbelicifim)
 - Site: [cairnstudy.com](https://cairnstudy.com/)
 - Contact: hello@cairnstudy.com
-- Current version: **1.3.0** (see [`raw/changelog.md`](../raw/changelog.md))
+- Release notes: [`raw/changelog.md`](../raw/changelog.md)
 
 ## Related pages
 
