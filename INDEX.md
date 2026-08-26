@@ -10,8 +10,10 @@ playlists, shows short timestamped notes — *traces* — that other learners le
 at the moments they left them, and syncs across devices when you sign in. Since
 1.3.0 it also has an optional AI study chat that knows which lecture is playing
 and where you are paused in it, and can read a course's compiled knowledge base
-before answering. It is a free, independent side project, not affiliated with
-YouTube, Stanford, or MIT.
+before answering. It is made by **chaimantec** — a free, independent side
+project, not affiliated with YouTube, Stanford, or MIT — and it takes its shape
+from *Death Stranding*: what you get from other learners is what they left
+behind at a hard moment, not a conversation with them.
 
 - Store listing: [Cairn — YouTube Course Tracker](https://chromewebstore.google.com/detail/cairn/ipoiephjmljacojnhacbkbfbelicifim)
 - Site: [cairnstudy.com](https://cairnstudy.com/) · Contact: hello@cairnstudy.com
@@ -23,8 +25,9 @@ endpoints, or the database — and it does not describe unshipped features. See
 
 ## Start here
 
-- [What Cairn is](wiki/what-is-cairn.md) — what it does, who it is for, and the
-  things it deliberately is not.
+- [What Cairn is](wiki/what-is-cairn.md) — what it does, who makes it, where the
+  name and the design come from, who it is for, and the things it deliberately
+  is not.
 - [FAQ](wiki/faq.md) — the short answer to most questions, with links onward.
 - [Glossary](wiki/glossary.md) — trace, catalog, knowledge base, BYOK, nearby
   window, thinking level.
@@ -56,11 +59,12 @@ endpoints, or the database — and it does not describe unshipped features. See
 - [The study chat](wiki/study-chat.md) — what it is, how to turn it on, what it
   knows without being told, and how it writes.
 - [Bring your own key](wiki/bring-your-own-key.md) — DeepSeek, OpenRouter and
-  Tavily, where a key is stored, what it costs, and every provider error
-  explained.
+  Tavily, which one to set up first, where a key is stored, what drives the
+  bill, and every provider error explained.
 - [Models and thinking levels](wiki/models-and-thinking.md) — the model picker,
-  defaults, arbitrary OpenRouter model ids, and when more thinking is worth
-  paying for.
+  defaults, why `deepseek-v4-flash` direct from DeepSeek is the recommendation
+  and OpenRouter can cost more for the same model, arbitrary OpenRouter model
+  ids, and when more thinking is worth paying for.
 - [What the chat can look up](wiki/chat-tools.md) — the knowledge-base, web and
   memory tools, what the transcript chips mean, and how citations work.
 - [Chat memory](wiki/chat-memory.md) — standing instructions about how you like

@@ -13,6 +13,7 @@ is about the tool rather than about a course.
 | Extension release notes | Changelog through 1.3.0 | [`raw/changelog.md`](raw/changelog.md) | 2026-08-26 |
 | Cairn 1.3.0, installed | The shipped UI — labels, defaults, limits, error messages | — | 2026-08-26 |
 | [`chaimantec/cairn-kb-cs224n`](https://github.com/chaimantec/cairn-kb-cs224n) | A published knowledge base, used as the worked example | — | 2026-08-26 |
+| chaimantec, Cairn's maker | Authorship, the *Death Stranding* inspiration, and the current provider recommendation — stated directly, not published anywhere else | — | 2026-08-26 |
 
 ## What is deliberately not here
 
@@ -24,3 +25,14 @@ goes — which key is stored where, what reaches a model provider — the answer
 taken from the published privacy policy and cited to it.
 
 Cairn's source code is not public, so nothing here is quoted from it.
+
+## The maker-supplied facts
+
+Four claims in this knowledge base come from Cairn's maker directly rather than
+from a public page, and are marked as such where they appear: that Cairn is made
+by chaimantec, that its design is inspired by *Death Stranding*, that
+`deepseek-v4-flash` used with a direct DeepSeek key is the current
+recommendation, and that reaching a model through OpenRouter may cost more
+because prompt caching does not always work as expected through it. The first
+two are durable; the last two are a snapshot of provider behaviour in August
+2026 and should be re-checked before being quoted as current.

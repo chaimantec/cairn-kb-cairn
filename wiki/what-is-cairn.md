@@ -12,6 +12,16 @@ extension is built around that idea: the useful thing is not a feed or a
 discussion, it is a short note pinned to the second in a lecture where someone
 got stuck and worked it out.
 
+The direct inspiration is **Death Stranding**, and naming it explains the shape
+of everything else. In that game you play a courier crossing an emptied-out
+landscape, and the other players are never present — what you meet is what they
+left behind: a ladder over a ravine, a rope down a cliff, a sign warning about
+the ground ahead. You can like what someone left; you cannot talk to them. Cairn
+takes that structure and points it at a lecture course. A trace is a rope left
+at the hard part, and the hard part is minute 37 of the backpropagation lecture.
+The asynchronous, no-replies design described below is not a missing feature —
+it is the borrowed idea.
+
 The site's own summary: *"Cairn is a Chrome extension for people working through
 real university lecture series — Stanford CS, MIT OCW, and the rest. It tracks
 your progress across devices, and surfaces traces left by other learners who came
@@ -70,6 +80,18 @@ your own provider key, and you pay that provider directly. See
 
 It is **not affiliated with YouTube, Google, Stanford, or MIT.** It is an
 independent side project, and free.
+
+## Who makes it
+
+Cairn is made by **chaimantec**. It is a one-person, free side project rather
+than a company product, which is the reason behind several things that would
+otherwise look like gaps: support is an email address rather than a desk, the
+course catalog is built by the people using it rather than curated, and the AI
+chat runs on your own provider key rather than on infrastructure somebody has to
+fund. The knowledge bases the chat reads are published under the same name — the
+worked example is
+[`chaimantec/cairn-kb-cs224n`](https://github.com/chaimantec/cairn-kb-cs224n),
+and this knowledge base is one of them.
 
 ## Where it lives
 

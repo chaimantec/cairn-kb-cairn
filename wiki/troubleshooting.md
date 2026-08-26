@@ -55,6 +55,23 @@ Two possible reasons, in order:
 | *"This conversation is too long for the selected model."* | Start a new chat. See [managing chats](managing-chats.md). |
 | *"Too many requests. Slow down a moment."* | Cairn's own rate limit. Pause briefly. |
 
+## The chat is costing more than I expected
+
+Three usual causes. **Long conversations** — the earlier messages are re-sent
+with every new one, so a chat you have kept going all evening costs more per
+turn than a fresh one; start a new chat per question. **Images** are re-sent the
+same way. And **the route to the model**: prompt caching does not always work as
+expected through OpenRouter, and an uncached conversation is billed at full
+price on every turn rather than a reduced rate for the repeated part, so the
+same model can cost noticeably more through the gateway than through a direct
+DeepSeek key. `deepseek-v4-flash` on a DeepSeek key is the cheap default. See
+[what it costs](bring-your-own-key.md) and
+[models and thinking levels](models-and-thinking.md).
+
+Cairn cannot see your spend — the usage readout is an estimate, and it is wrong
+for any model it has no price data for. Your provider's dashboard is the
+authority.
+
 ## The chat does not know anything about my course
 
 Check whether the course has a [knowledge base](knowledge-bases.md) — a link on

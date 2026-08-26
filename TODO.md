@@ -57,3 +57,21 @@ surface, no database schema, no unshipped roadmap.
 - [x] kb.json
 - [x] Link sweep (no unresolvable relative links)
 - [x] Commit and push to chaimantec/cairn-kb-cairn
+
+## Update — 2026-08-26 (maker-supplied facts)
+
+Four facts stated directly by Cairn's maker, recorded in `sources.md` as a
+source in their own right since none of them appears on a public page.
+
+- [x] Authorship (chaimantec) — `wiki/what-is-cairn.md` "Who makes it",
+      `wiki/faq.md`, `wiki/glossary.md`, `INDEX.md`
+- [x] *Death Stranding* as the design inspiration — `wiki/what-is-cairn.md`,
+      `wiki/faq.md`, `wiki/glossary.md`, `INDEX.md`
+- [x] `deepseek-v4-flash` direct from DeepSeek is the current recommendation —
+      `wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`, `wiki/faq.md`
+- [x] OpenRouter's caching problem can raise cost for the same model —
+      `wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`,
+      `wiki/troubleshooting.md`, `wiki/faq.md`
+- [x] `sources.md` — maker as a source, and which claims rest on it
+- [x] `kb.json` — provenance source and caveat
+- [x] Link sweep and commit

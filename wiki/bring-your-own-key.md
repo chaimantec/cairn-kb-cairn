@@ -19,6 +19,15 @@ nothing."*
 Save at least one chat key or the composer stays disabled. Tavily is purely
 additive: with it, `web_search` and `web_fetch` appear; without it, they do not.
 
+**If you are only going to set up one, make it DeepSeek.** A DeepSeek key
+running `deepseek-v4-flash` is the current recommendation for ordinary study
+use, and going to DeepSeek directly sidesteps the caching problem described
+under *What it costs* below. OpenRouter earns its keep when you want a model
+DeepSeek does not publish — a frontier model for a hard derivation, or something
+with vision for [screenshots](images-in-chat.md). Saving both and switching per
+question is a perfectly good setup. See
+[models and thinking levels](models-and-thinking.md).
+
 Getting a key means signing up with that provider and creating one in their
 dashboard. Cairn does not resell or provision keys, and cannot help with billing
 on them.
@@ -46,11 +55,18 @@ account deletes your keys.
 
 ## What it costs
 
-Whatever your provider charges for the model you pick, and nothing else. Two
+Whatever your provider charges for the model you pick, and nothing else. Three
 things drive the bill more than anything:
 
 - **The model.** A frontier model through OpenRouter costs many times what a
   fast, cheap model does. See [models and thinking levels](models-and-thinking.md).
+- **The route to it.** Prompt caching does not always work as expected through
+  OpenRouter, and a conversation whose earlier turns are not being cached is
+  billed at full price on every turn rather than a reduced rate for the repeated
+  part. The same model reached with a direct DeepSeek key can therefore cost
+  noticeably less than reached through the gateway. This is a provider-side
+  behaviour, not something Cairn controls or can show you — check your spend in
+  the provider's own dashboard if a chat feels more expensive than it should.
 - **Conversation length.** Your browser holds the conversation and sends the
   earlier messages along with each new one, so a long chat costs more per turn
   than a short one. Starting a fresh chat for a new question is the single

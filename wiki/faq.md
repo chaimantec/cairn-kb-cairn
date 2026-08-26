@@ -6,6 +6,16 @@ on YouTube, shows you timestamped notes other learners left, and offers an
 optional AI study chat that has read the course. See
 [what Cairn is](what-is-cairn.md).
 
+**Where does the name come from?**
+A cairn is a stack of stones left on a trail to mark the way for whoever comes
+next. The design is inspired by *Death Stranding*, where other players are never
+present and what helps you is the things they left behind — which is exactly
+what a trace is. See [what Cairn is](what-is-cairn.md).
+
+**Who makes Cairn?**
+**chaimantec**, working solo. It is a free, independent side project, not a
+company product.
+
 **Is it free?**
 Yes. It is a free side project. The only thing you might pay for is the
 [AI chat](study-chat.md), and you pay the model provider directly, not Cairn.
@@ -47,6 +57,14 @@ So there is no subscription and no markup — you pay the provider at cost. It
 supports DeepSeek and OpenRouter, plus Tavily for optional web search. See
 [bring your own key](bring-your-own-key.md).
 
+**Which model should I use?**
+`deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — that is
+the current recommendation, and the DeepSeek default. Reaching a model through
+OpenRouter instead can cost more than it should, because prompt caching does not
+always work as expected through the gateway and an uncached conversation is
+billed in full on every turn. Keep OpenRouter for models DeepSeek does not
+publish. See [models and thinking levels](models-and-thinking.md).
+
 **Where is my key stored?**
 Encrypted on Cairn's servers, never in your browser and never sent back to it.
 
@@ -85,7 +103,7 @@ Uninstalling or clearing the extension's data removes what is local, including
 your chats. See [privacy and your data](privacy-and-data.md).
 
 **Is Cairn affiliated with Stanford, MIT, or YouTube?**
-No. It is an independent project.
+No. It is an independent project, made by chaimantec.
 
 **Who do I contact?**
 hello@cairnstudy.com

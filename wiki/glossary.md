@@ -5,7 +5,10 @@ API key from DeepSeek or OpenRouter and pay them directly, rather than paying
 Cairn for a bundled allowance. See [bring your own key](bring-your-own-key.md).
 
 **Cairn** — both the extension, and the thing it is named after: a stack of
-stones left on a trail by earlier walkers to mark the way.
+stones left on a trail by earlier walkers to mark the way. Made by
+**chaimantec**, and inspired by *Death Stranding*, where the help you get from
+other players is the things they left behind rather than anything they say. See
+[what Cairn is](what-is-cairn.md).
 
 **Catalog** — the shared, community-built list of courses. Anyone signed in can
 add to it; enrolling from it needs no account. See [the catalog](catalog.md).
