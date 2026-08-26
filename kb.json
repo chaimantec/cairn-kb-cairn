@@ -44,13 +44,15 @@
       "Cairn 1.3.0 as shipped",
       "chaimantec (Cairn's maker), direct statement, 2026-08-26",
       "https://docs.claude.com/en/docs/build-with-claude/prompt-caching",
-      "https://openrouter.ai/docs/features/prompt-caching"
+      "https://openrouter.ai/docs/features/prompt-caching",
+      "https://api-docs.deepseek.com/quick_start/pricing",
+      "https://github.com/earendil-works/pi (@earendil-works/pi-ai)"
     ],
     "caveats": [
       "Scope is user-facing only by design: no server architecture, API surface, database schema, or unshipped features are documented.",
       "Describes version 1.3.0. Limits, defaults and UI labels are version-specific and will drift as the extension is updated.",
       "Model catalogs and default models come from providers that change them independently of Cairn releases.",
-      "Authorship and the Death Stranding inspiration come from Cairn's maker directly rather than from a published page. The DeepSeek recommendation is the maker's, and is a snapshot of August 2026 prices; the prompt-caching behaviour it rests on was checked against Anthropic's and OpenRouter's own documentation on 2026-08-26 and will move as providers change."
+      "Authorship and the Death Stranding inspiration come from Cairn's maker directly rather than from a published page. The DeepSeek recommendation is the maker's; the prices and prompt-caching behaviour it rests on were checked on 2026-08-26 against DeepSeek's pricing page, Anthropic's and OpenRouter's caching docs, and the source of the pi-ai provider library, and will move as providers change them."
     ]
   },
   "entryPoint": "INDEX.md",

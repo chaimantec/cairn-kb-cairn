@@ -60,17 +60,18 @@ Two possible reasons, in order:
 Three usual causes. **Long conversations** — the earlier messages are re-sent
 with every new one, so a chat you have kept going all evening costs more per
 turn than a fresh one; start a new chat per question. **Images** are re-sent the
-same way. And **the model you are on**: providers charge roughly a tenth of the
-normal price to re-read text they have already seen, but **Anthropic's models
-only cache when the request explicitly asks them to**, while DeepSeek, OpenAI,
-Gemini and Grok cache automatically. A Claude model can therefore be billed at
-full price for the entire conversation on every turn.
+same way. And **the model you are on** — prices across the catalog differ by
+more than an order of magnitude.
 
 Check the model picker first. The OpenRouter default in 1.3.0 is
-`anthropic/claude-sonnet-5`, so if you saved an OpenRouter key and never chose a
-model, that is what you are on. `deepseek-v4-flash` on a DeepSeek key is the
-cheap option. See [what it costs](bring-your-own-key.md) and
+`anthropic/claude-sonnet-5`, the most expensive option offered, so if you saved
+an OpenRouter key and never chose a model, that is what you are on.
+`deepseek-v4-flash` on a DeepSeek key costs a fraction of it. See
+[what it costs](bring-your-own-key.md) and
 [models and thinking levels](models-and-thinking.md).
+
+Prompt caching is not something to check: it is handled for you on every
+provider, so it is not the explanation for a surprising bill.
 
 Cairn cannot see your spend — the usage readout is an estimate, and it is wrong
 for any model it has no price data for. Your provider's dashboard is the

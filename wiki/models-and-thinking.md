@@ -30,7 +30,7 @@ Your choice is remembered as your default for future chats.
 If you want one answer rather than a decision, use **`deepseek-v4-flash` with a
 DeepSeek key, going to DeepSeek directly**. That is the current recommendation
 from Cairn's maker, as of August 2026, and the reason it is the DeepSeek default
-in the picker. Two things earn it that place.
+in the picker. Three things earn it that place.
 
 **It is cheap.** Fast and cheap enough that the cost of a study session stops
 being something you weigh before asking a question, and most study questions are
@@ -38,36 +38,55 @@ retrieval — finding the moment in the lecture, quoting a definition back,
 checking whether lecture 3 covered something, reading the
 [knowledge base](knowledge-bases.md) — which does not need a frontier model.
 
-**Its caching behaviour is excellent, and caching is most of the bill.** Cairn
-sends the earlier messages along with each new one, so by the third question the
-majority of what you are paying for is text the provider has already seen.
-DeepSeek caches that repeated prefix automatically, with nothing to configure,
-and charges about a tenth of the normal input price to read it back. A long
-conversation therefore costs far less than its length suggests.
+**Its caching is excellent, and caching is most of the bill.** Cairn sends the
+earlier messages along with each new one, so by the third question the majority
+of what you are paying for is text the provider has already seen. DeepSeek
+caches that repeated prefix automatically, with nothing to configure, and reads
+it back at roughly **a thirtieth** of the normal input price — a far steeper
+discount than most providers offer. A long conversation therefore costs much
+less than its length suggests.
 
-### Caching is not the same on every provider
+**Its off-peak rate is half price.** DeepSeek bills peak and off-peak, and peak
+is only 01:00–04:00 and 06:00–10:00 UTC on weekdays — about a fifth of the week.
+Evening and weekend study, which is when most of it happens, is off-peak.
 
-This is the part that decides the bill, and it varies by provider rather than by
-gateway. Roughly:
+### What `deepseek-v4-flash` actually costs
 
-| Provider | Caching | Cost of a cached read |
+Per million tokens, as published in August 2026 — check
+[DeepSeek's pricing page](https://api-docs.deepseek.com/quick_start/pricing) for
+current figures, since these move:
+
+| | Peak | Off-peak |
 |---|---|---|
-| DeepSeek | Automatic | ~0.1× the input price |
-| OpenAI, Google Gemini, xAI Grok | Automatic | ~0.1–0.5× |
-| **Anthropic (Claude)** | **Only when the request asks for it** | ~0.1× if asked, **full price if not** |
+| Input, already cached | $0.014 | $0.007 |
+| Input, not yet cached | $0.44 | $0.22 |
+| Output | $1.32 | $0.66 |
 
-So going through OpenRouter is not itself the problem — OpenRouter follows
-whatever the underlying provider does. The problem is specific: **Anthropic's
-models do not cache unless the request explicitly asks them to**, and every
-other major provider caches on its own. Pick a Claude model on a chat that
-re-sends its history each turn and does not opt in, and you pay full price for
-the whole conversation on every single message.
+After the first question or two, most input is the cached kind. That is why a
+long conversation on this model stays cheap in a way its token count does not
+predict.
+
+### A note on caching and Claude models
+
+Anthropic's models are the one family that does not cache automatically: the
+request has to ask, by marking where the reusable prefix ends. Every other major
+provider — DeepSeek, OpenAI, Gemini, Grok — caches on its own.
+
+**This is handled for you and is not something you need to think about.** The
+library Cairn uses to talk to providers sets those markers itself for Claude
+models reached through OpenRouter, so the conversation caches the same way it
+would anywhere else. It is worth knowing only if you are comparing Cairn's costs
+against some other tool that does not do it.
+
+So a Claude model is not expensive here because of caching. It is expensive
+because of its list price: `anthropic/claude-sonnet-5` is around $2 per million
+input tokens and $10 per million output, against `deepseek-v4-flash`'s $0.44 and
+$1.32 at peak, halving off-peak.
 
 **Worth knowing about the shipped default:** the OpenRouter default in 1.3.0 is
-`anthropic/claude-sonnet-5`, which is both the most expensive option in the
-picker and the one whose caching is conditional. If you have saved an OpenRouter
-key and never touched the model picker, that is what you are being billed for.
-Choosing almost anything else is cheaper.
+`anthropic/claude-sonnet-5`, the most expensive option in the picker. If you
+saved an OpenRouter key and never touched the model picker, that is what you are
+being billed for, and almost anything else you choose is cheaper.
 
 Prefer a direct DeepSeek key for everyday use. OpenRouter is what you add when
 you want the choice — one key reaching many vendors' catalogs, plus any model id

@@ -21,8 +21,9 @@ additive: with it, `web_search` and `web_fetch` appear; without it, they do not.
 
 **If you are only going to set up one, make it DeepSeek.** A DeepSeek key
 running `deepseek-v4-flash` is the current recommendation for ordinary study
-use: it is cheap per token, and it caches the repeated part of a conversation
-automatically, which is what actually decides the bill. **OpenRouter is what you
+use: it is cheap per token, it re-reads the repeated part of a conversation at
+about a thirtieth of the normal price, and its off-peak rate — most evenings and
+all weekend — is half of that again. **OpenRouter is what you
 add when you want the choice** — one key reaching many vendors' catalogs, plus
 any model id OpenRouter publishes, so you can pick on whatever grounds matter to
 you that day: price, speed, whether it reads
@@ -63,17 +64,15 @@ things drive the bill more than anything:
 - **The model.** Prices across the catalog differ by more than an order of
   magnitude — a frontier model costs many times what a fast, cheap one does.
   See [models and thinking levels](models-and-thinking.md).
-- **Whether that model caches.** Because the earlier messages are re-sent with
+- **How well that model caches.** Because the earlier messages are re-sent with
   every new one, most of a long conversation is text the provider has already
-  seen, and providers charge roughly a tenth of the normal price to re-read
-  cached text. DeepSeek — like OpenAI, Gemini and Grok — does this
-  automatically. **Anthropic's models cache only when the request explicitly
-  asks them to**, so a Claude model can be billed at full price for the entire
-  conversation on every turn. That is a difference of a multiplier, not a
-  rounding error, and it is the strongest argument for the DeepSeek
-  recommendation above. It is provider behaviour rather than anything Cairn
-  shows you — check the provider's own dashboard if a chat feels more expensive
-  than it should.
+  seen, and every provider charges less to re-read it. How much less varies a
+  lot: DeepSeek reads cached text at about a thirtieth of its normal input
+  price, where most providers discount to somewhere between a tenth and a half.
+  Caching itself is handled for you on every provider Cairn supports — it is not
+  a setting, and there is nothing to turn on. Check the provider's own dashboard
+  if a chat feels more expensive than it should; Cairn's usage readout is only
+  an estimate.
 - **Conversation length.** Your browser holds the conversation and sends the
   earlier messages along with each new one, so a long chat costs more per turn
   than a short one. Starting a fresh chat for a new question is the single

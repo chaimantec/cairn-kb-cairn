@@ -69,14 +69,19 @@ source in their own right since none of them appears on a public page.
       `wiki/faq.md`, `wiki/glossary.md`, `INDEX.md`
 - [x] `deepseek-v4-flash` direct from DeepSeek is the current recommendation —
       `wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`, `wiki/faq.md`
-- [x] Why caching decides the bill, corrected against the providers' own docs:
-      caching follows the provider, not the gateway — DeepSeek, OpenAI, Gemini
-      and Grok cache automatically, Anthropic's models cache only when the
-      request asks. `wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`,
+- [x] Why caching decides the bill — DeepSeek reads cached text at ~1/30 of its
+      input price. `wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`,
       `wiki/troubleshooting.md`, `wiki/faq.md`
+- [x] `deepseek-v4-flash` peak/off-peak price table, and the peak hours
+- [x] **Corrected 2026-08-26:** an earlier revision of these pages claimed Claude
+      models through OpenRouter were billed uncached. Wrong. Anthropic does
+      require explicit cache markers where other providers do not, but
+      `@earendil-works/pi-ai` — the library Cairn uses to reach providers — sets
+      them itself for `anthropic/*` ids on OpenRouter (`generate-models.ts:682`
+      sets `cacheControlFormat: "anthropic"`; retention defaults to `short`, not
+      `none`). Claude is dearer here for the ordinary reason: its list price.
 - [x] Note that the shipped 1.3.0 OpenRouter default, `anthropic/claude-sonnet-5`,
-      is both the priciest option in the picker and the one whose caching is
-      conditional
+      is the priciest option in the picker
 - [x] `sources.md` — maker as a source, and which claims rest on it
 - [x] `kb.json` — provenance source and caveat
 - [x] Link sweep and commit
@@ -90,3 +95,8 @@ source in their own right since none of them appears on a public page.
       `google/gemini-3.7-flash` — automatic caching, vision, 1M context, and
       about a fifth of the price. Not documented here until it ships: this KB
       describes what ships.
+- [ ] Worth checking in the extension, not the KB: the `cacheControlFormat`
+      rule in pi-ai keys off the *generated model catalog*. A model id typed
+      into the free-text "any OpenRouter model id" field that is not in the
+      catalog may not get compat computed, and so may not get cache markers.
+      Raised 2026-08-26; not documented until confirmed either way.
