@@ -52,7 +52,7 @@
       "Scope is user-facing only by design: no server architecture, API surface, database schema, or unshipped features are documented.",
       "Describes version 1.3.0. Limits, defaults and UI labels are version-specific and will drift as the extension is updated.",
       "Model catalogs and default models come from providers that change them independently of Cairn releases.",
-      "Authorship and the Death Stranding inspiration come from Cairn's maker directly rather than from a published page. The DeepSeek recommendation is the maker's; the prices and prompt-caching behaviour it rests on were checked on 2026-08-26 against DeepSeek's pricing page, Anthropic's and OpenRouter's caching docs, and the source of the pi-ai provider library, and will move as providers change them."
+      "Authorship and the Death Stranding inspiration come from Cairn's maker directly rather than from a published page. The model recommendation is dated 2026-08-26 and is explicitly not a standing one: the prices and prompt-caching behaviour behind it were checked that day against DeepSeek's pricing page, Anthropic's and OpenRouter's caching docs, and the source of the pi-ai provider library, and providers change all of it independently of Cairn's releases. Re-verify before quoting it as current."
     ]
   },
   "entryPoint": "INDEX.md",

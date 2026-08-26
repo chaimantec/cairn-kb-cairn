@@ -63,8 +63,9 @@ endpoints, or the database — and it does not describe unshipped features. See
   key is stored, what drives the bill, and every provider error explained.
 - [Models and thinking levels](wiki/models-and-thinking.md) — the model picker,
   defaults, why `deepseek-v4-flash` direct from DeepSeek is the recommendation
-  and OpenRouter can cost more for the same model, arbitrary OpenRouter model
-  ids, and when more thinking is worth paying for.
+  as of 2026-08-26 and what it costs, arbitrary OpenRouter model ids, and when
+  more thinking is worth paying for. The recommendation is dated on purpose:
+  providers reprice and replace models faster than this page is revised.
 - [What the chat can look up](wiki/chat-tools.md) — the knowledge-base, web and
   memory tools, what the transcript chips mean, and how citations work.
 - [Chat memory](wiki/chat-memory.md) — standing instructions about how you like

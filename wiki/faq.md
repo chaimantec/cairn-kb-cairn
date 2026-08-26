@@ -58,13 +58,22 @@ supports DeepSeek and OpenRouter, plus Tavily for optional web search. See
 [bring your own key](bring-your-own-key.md).
 
 **Which model should I use?**
-`deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — that is
-the current recommendation, and the DeepSeek default. It is cheap, and it caches
+`deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — the
+recommendation as of **2026-08-26**, and the DeepSeek default. Check the date:
+providers reprice and replace models often, so this is a snapshot rather than a
+standing answer. It is cheap, and it caches
 the repeated part of a conversation at about a thirtieth of the normal price,
 which is most of what you would otherwise be paying for — and its off-peak rate,
 covering most evenings and all weekend, is half of that again. Add OpenRouter
 when you want the choice — one key reaching many vendors' catalogs, and any
 model id they publish. See [models and thinking levels](models-and-thinking.md).
+
+**Does reading a knowledge base make the chat expensive?**
+Less than you would think. The first time the assistant opens a page it is new
+text and is billed in full, but from then on it stays in the conversation and is
+re-read at the much cheaper cached rate. You pay for a page once and keep it for
+the rest of the chat — which is part of why the first question costs more than
+the ones that follow it.
 
 **Do I need to do anything to get prompt caching?**
 No. It is handled for you on every provider Cairn supports, including Claude

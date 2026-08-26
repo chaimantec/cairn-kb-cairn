@@ -20,8 +20,9 @@ Save at least one chat key or the composer stays disabled. Tavily is purely
 additive: with it, `web_search` and `web_fetch` appear; without it, they do not.
 
 **If you are only going to set up one, make it DeepSeek.** A DeepSeek key
-running `deepseek-v4-flash` is the current recommendation for ordinary study
-use: it is cheap per token, it re-reads the repeated part of a conversation at
+running `deepseek-v4-flash` is the recommendation for ordinary study use **as of
+2026-08-26** — a dated recommendation, not a permanent one, since providers
+reprice and replace models far faster than this page is revised: it is cheap per token, it re-reads the repeated part of a conversation at
 about a thirtieth of the normal price, and its off-peak rate — most evenings and
 all weekend — is half of that again. **OpenRouter is what you
 add when you want the choice** — one key reaching many vendors' catalogs, plus
@@ -80,7 +81,12 @@ things drive the bill more than anything:
   each turn.
 
 Reading a [knowledge base](knowledge-bases.md) also costs tokens — the assistant
-is genuinely reading files — but it is what makes the answers specific.
+is genuinely reading files — but it is what makes the answers specific, and it
+is cheaper than it first looks. The first read of a page is new text, so it is
+billed at the full rate; from then on it sits in the conversation and is re-read
+at the cached rate with every later turn. You pay for a page once and keep it
+for the rest of the chat. That is another reason the first question in a
+conversation costs more than the ones after it.
 
 ## If the provider rejects the request
 

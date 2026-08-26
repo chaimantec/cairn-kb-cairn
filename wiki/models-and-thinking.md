@@ -25,12 +25,21 @@ wrong for a model Cairn has no price data for; the request itself is unaffected.
 
 Your choice is remembered as your default for future chats.
 
-## The recommendation: `deepseek-v4-flash`, direct from DeepSeek
+## The recommendation, as of 2026-08-26: `deepseek-v4-flash`, direct from DeepSeek
+
+> **This recommendation has a date on it, and it is not a permanent one.** It
+> was last checked on **2026-08-26**. Model catalogs and prices change every few
+> months, without notice and independently of Cairn's releases — a model that is
+> the obvious choice today can be superseded, repriced, or withdrawn well before
+> this page is next revised. If you are reading it long after that date, treat
+> everything below as a starting point to verify rather than an answer, and
+> check the providers' own pricing pages. Nothing in Cairn depends on this
+> choice: the picker will take whatever you select.
 
 If you want one answer rather than a decision, use **`deepseek-v4-flash` with a
-DeepSeek key, going to DeepSeek directly**. That is the current recommendation
-from Cairn's maker, as of August 2026, and the reason it is the DeepSeek default
-in the picker. Three things earn it that place.
+DeepSeek key, going to DeepSeek directly**. That is the recommendation from
+Cairn's maker, and the reason it is the DeepSeek default in the picker. Three
+things earn it that place.
 
 **It is cheap.** Fast and cheap enough that the cost of a study session stops
 being something you weigh before asking a question, and most study questions are
@@ -52,9 +61,10 @@ Evening and weekend study, which is when most of it happens, is off-peak.
 
 ### What `deepseek-v4-flash` actually costs
 
-Per million tokens, as published in August 2026 — check
+Per million tokens, as published on **2026-08-26**. These are the numbers most
+likely to be out of date by the time you read them — check
 [DeepSeek's pricing page](https://api-docs.deepseek.com/quick_start/pricing) for
-current figures, since these move:
+current figures:
 
 | | Peak | Off-peak |
 |---|---|---|
@@ -94,8 +104,8 @@ they publish, so you are not limited to what one provider happens to offer. What
 that choice costs is then down to the model you make with it. See
 [what it costs](bring-your-own-key.md).
 
-This is a description of today's providers and today's prices, not a property of
-the product — both move, and the picker will take whatever you choose.
+All of the above describes providers and prices as they stood on 2026-08-26,
+not a property of the product. Both move.
 
 ## Thinking levels
 

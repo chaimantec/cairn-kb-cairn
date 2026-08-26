@@ -100,3 +100,10 @@ source in their own right since none of them appears on a public page.
       into the free-text "any OpenRouter model id" field that is not in the
       catalog may not get compat computed, and so may not get cache markers.
       Raised 2026-08-26; not documented until confirmed either way.
+- [x] Attach an explicit date to the model recommendation everywhere it appears
+      (`wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`,
+      `wiki/faq.md`, `INDEX.md`, `kb.json`) and say plainly it is a snapshot, not
+      a standing answer — providers reprice faster than this KB is revised
+- [x] Record that the first read of a knowledge-base page is billed uncached and
+      every later turn re-reads it from cache — `wiki/bring-your-own-key.md`,
+      `wiki/faq.md`
