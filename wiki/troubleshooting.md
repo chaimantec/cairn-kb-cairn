@@ -41,7 +41,7 @@ sign in again; Cairn keeps working locally until you do. Nothing is lost.
 Two possible reasons, in order:
 
 1. **You are not signed in.** The chat requires an account.
-2. **No API key is saved.** Add a DeepSeek or OpenRouter key in **Settings → AI
+2. **No API key is saved.** Add a Gemini, DeepSeek or OpenRouter key in **Settings → AI
    chat**. See [bring your own key](bring-your-own-key.md).
 
 ## The chat gives an error
@@ -50,7 +50,7 @@ Two possible reasons, in order:
 |---|---|
 | *"…rejected the API key. Check it in Settings."* | Re-paste the key; check for stray whitespace and that it has not been revoked. |
 | *"…reports insufficient credit for this request."* | Top up with your provider. Cairn cannot see your balance. |
-| *"…is rate-limiting your key."* | Your provider's limit. Wait, or use a different model. |
+| *"…is rate-limiting this key…"* | Your provider's limit. Wait a minute, or use a different model. Common on Gemini's free tier — see [rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first). |
 | *"…is having trouble right now."* | Provider outage. Try again shortly. |
 | *"This conversation is too long for the selected model."* | Start a new chat. See [managing chats](managing-chats.md). |
 | *"Too many requests. Slow down a moment."* | Cairn's own rate limit. Pause briefly. |
@@ -63,16 +63,35 @@ turn than a fresh one; start a new chat per question. **Images** are re-sent the
 same way. And **the model you are on** — prices across the catalog differ by
 more than an order of magnitude.
 
-Check the model picker first. The OpenRouter default in 1.3.0 is
-`anthropic/claude-sonnet-5`, the most expensive option offered, so if you saved
-an OpenRouter key and never chose a model, that is what you are on.
-`deepseek-v4-flash` on a DeepSeek key costs a fraction of it. See
-[what it costs](bring-your-own-key.md) and
+Check the model picker first. Each provider has a default that you get if you
+never opened the picker, and none of them is chosen for being the cheapest —
+the spread across the catalog is more than an order of magnitude, so this is
+usually the largest single thing you can change. `deepseek-v4-flash` on a
+DeepSeek key is the cheap end. See [what it costs](bring-your-own-key.md) and
 [models and thinking levels](models-and-thinking.md).
 
 Cairn cannot see your spend — the usage readout is an estimate, and it is wrong
 for any model it has no price data for. Your provider's dashboard is the
 authority.
+
+## The chat keeps saying it is being rate-limited
+
+Your provider is refusing requests for a moment, not Cairn. The reason it
+arrives sooner than expected is that **one question is usually several requests**
+— the assistant reads a knowledge-base file, perhaps searches, then writes the
+answer, and each step is its own call.
+
+On **Gemini's free tier** this is normal rather than exceptional: the allowance
+is a few requests a minute. Wait a minute and ask again, ask fewer and larger
+questions, switch to a Flash-Lite model, or enable billing on the key. Creating
+a second key does not help — Google counts the limit per project, not per key.
+
+On **OpenRouter** the message usually reflects the vendor serving your chosen
+model, not your OpenRouter balance, so topping up will not clear it; switching
+to a model from another vendor generally will.
+
+Full detail, including the daily cap, is in
+[rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first).
 
 ## The chat does not know anything about my course
 

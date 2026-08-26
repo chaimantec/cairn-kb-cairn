@@ -1,7 +1,7 @@
 # Glossary
 
 **BYOK** — "bring your own key". Cairn's model for the AI chat: you supply an
-API key from DeepSeek or OpenRouter and pay them directly, rather than paying
+API key from Gemini, DeepSeek or OpenRouter and pay them directly, rather than paying
 Cairn for a bundled allowance. See [bring your own key](bring-your-own-key.md).
 
 **Cairn** — both the extension, and the thing it is named after: a stack of

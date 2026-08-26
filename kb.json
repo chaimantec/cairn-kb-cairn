@@ -13,7 +13,6 @@
     "note": "This knowledge base documents the Cairn extension itself, not a course taught through it. It has no lectures, transcripts, or slide decks."
   },
   "coverage": {
-    "appVersion": "1.3.0",
     "lecturesCovered": 0,
     "lecturesTotal": 0,
     "transcripts": 0,
@@ -41,14 +40,18 @@
       "https://cairnstudy.com/",
       "https://cairnstudy.com/privacy.html",
       "https://chromewebstore.google.com/detail/cairn/ipoiephjmljacojnhacbkbfbelicifim",
-      "Cairn 1.3.0 as shipped",
+      "Cairn as shipped",
       "chaimantec (Cairn's maker), direct statement, 2026-08-26",
-      "https://api-docs.deepseek.com/quick_start/pricing"
+      "https://api-docs.deepseek.com/quick_start/pricing",
+      "https://ai.google.dev/gemini-api/docs/rate-limits",
+      "https://ai.google.dev/gemini-api/terms",
+      "https://openrouter.ai/docs/api-reference/limits"
     ],
     "caveats": [
       "Scope is user-facing only by design: no server architecture, API surface, database schema, or unshipped features are documented.",
-      "Describes version 1.3.0. Limits, defaults and UI labels are version-specific and will drift as the extension is updated.",
+      "Limits, defaults and UI labels are version-specific and drift as the extension is updated. Pages describe the current shipped behaviour rather than a pinned release.",
       "Model catalogs and default models come from providers that change them independently of Cairn releases.",
+      "Provider rate limits are described in kind rather than in numbers: Google publishes a user's actual per-model limits only on their own AI Studio rate-limit page, not in its documentation.",
       "Authorship and the Death Stranding inspiration come from Cairn's maker directly rather than from a published page. The model recommendation is dated 2026-08-26 and is explicitly not a standing one: providers reprice and replace models independently of Cairn's releases."
     ]
   },

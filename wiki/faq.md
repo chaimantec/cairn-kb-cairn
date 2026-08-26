@@ -54,22 +54,32 @@ publishes one under your nickname, and you can switch it back.
 
 **Why does the AI chat need my own API key?**
 So there is no subscription and no markup — you pay the provider at cost. It
-supports DeepSeek and OpenRouter, plus Tavily for optional web search. See
-[bring your own key](bring-your-own-key.md).
+supports Gemini, DeepSeek and OpenRouter, plus Tavily for optional web search.
+A Gemini key is free to create with a Google account, so starting costs nothing.
+See [bring your own key](bring-your-own-key.md).
 
 **Which model should I use?**
 `deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — the
 recommendation as of **2026-08-26**, and the DeepSeek default. Check the date:
 providers reprice and replace models often, so this is a snapshot rather than a
-standing answer. Add OpenRouter when you want the choice — one key reaching many
-vendors' catalogs, and any model id they publish. See
-[models and thinking levels](models-and-thinking.md).
+standing answer. If you would rather not pay anything to try it, start with a
+free Gemini key instead and accept the tighter rate limit. Add OpenRouter when
+you want the choice — one key reaching many vendors' catalogs, and any model id
+they publish. See [models and thinking levels](models-and-thinking.md).
+
+**Why do I keep getting rate-limited?**
+Because one question is usually several requests: the assistant reads a
+knowledge-base file, maybe searches, then answers, and each step is its own call
+to your provider. Gemini's free tier allows only a few a minute, so this shows
+up there first. Wait a minute, ask fewer and larger questions, or enable billing.
+A second key does not help — Google counts the limit per project. See
+[rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first).
 
 **Why is a Claude model more expensive?**
 Its price. `anthropic/claude-sonnet-5` is roughly $2 per million input tokens
-and $10 per million output, against `deepseek-v4-flash`'s $0.44 and $1.32. It is
-also the OpenRouter default in 1.3.0, so if you saved an OpenRouter key and
-never opened the model picker, that is what you are being billed for.
+and $10 per million output, against `deepseek-v4-flash`'s $0.44 and $1.32. If a
+chat is costing more than you expected, the model you are on is usually the
+reason — open the picker and check.
 
 **Where is my key stored?**
 Encrypted on Cairn's servers, never in your browser and never sent back to it.

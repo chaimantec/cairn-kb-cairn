@@ -86,15 +86,37 @@ source in their own right since none of them appears on a public page.
 - [x] `kb.json` — provenance source and caveat
 - [x] Link sweep and commit
 
-### Open — depends on the extension, not the KB
+## Revision 2026-08-26 — Gemini, the new OpenRouter default, rate limits
 
-- [ ] If the OpenRouter default changes from `anthropic/claude-sonnet-5`, update
-      `wiki/models-and-thinking.md` (defaults table and the recommendation
-      section), `wiki/faq.md` and `wiki/troubleshooting.md`, all of which now
-      name it. Recommendation put to the maker on 2026-08-26 was
-      `google/gemini-3.7-flash` — automatic caching, vision, 1M context, and
-      about a fifth of the price. Not documented here until it ships: this KB
-      describes what ships.
+- [x] Add **Gemini** as a third chat provider across
+      `wiki/bring-your-own-key.md` (provider table, the free-key on-ramp),
+      `wiki/models-and-thinking.md` (defaults table),
+      `wiki/study-chat.md`, `wiki/install-and-setup.md`, `wiki/glossary.md`,
+      `wiki/faq.md`, `wiki/troubleshooting.md` and `INDEX.md`.
+- [x] OpenRouter default is now `openai/gpt-5.6-luna`. Removed every claim that
+      the default is `anthropic/claude-sonnet-5` and the "most expensive option
+      in the picker" framing built on it — `wiki/models-and-thinking.md`,
+      `wiki/faq.md`, `wiki/troubleshooting.md`. Claude's prices are kept as a
+      comparison, since the point about model choice driving the bill stands.
+- [x] **Rate limits, the point of this revision.** New section in
+      `wiki/bring-your-own-key.md`; a symptom section in
+      `wiki/troubleshooting.md`; an FAQ entry; and the requests-vs-questions
+      distinction in `wiki/limits-and-caps.md`. The load-bearing fact is that
+      **one question is several requests** — a KB read, a search and the answer
+      are separate calls — which is why a per-minute allowance goes sooner than
+      a user expects. Gemini's free tier is where it shows first.
+- [x] Note that Google counts limits **per project, not per key**, so a second
+      key does not help. This is the fix people reach for first.
+- [x] Note in `wiki/privacy-and-data.md` that Google's free-tier terms permit
+      training on prompts and responses while the paid tier does not — relevant
+      precisely because the free key is the recommended on-ramp.
+- [x] Version pins: the blanket "describes version 1.3.0" claim in `INDEX.md`,
+      `sources.md` and `kb.json` is gone, because these pages now describe
+      behaviour past 1.3.0. Kept the three true historical statements that the
+      chat *arrived* in 1.3.0.
+- [x] `sources.md` and `kb.json` — Google and OpenRouter limit/terms sources.
+
+### Open — depends on the extension, not the KB
 - [ ] Worth checking in the extension, not the KB: the `cacheControlFormat`
       rule in pi-ai keys off the *generated model catalog*. A model id typed
       into the free-text "any OpenRouter model id" field that is not in the

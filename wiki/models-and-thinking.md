@@ -14,8 +14,9 @@ The defaults, if you do not choose:
 
 | Provider | Default model |
 |---|---|
+| Gemini | `gemini-3.7-flash` |
 | DeepSeek | `deepseek-v4-flash` |
-| OpenRouter | `anthropic/claude-sonnet-5` |
+| OpenRouter | `openai/gpt-5.6-luna` |
 
 **Any OpenRouter model id works, listed or not.** There is a free-text field —
 *"any OpenRouter model id"* — because OpenRouter adds models faster than any
@@ -48,17 +49,24 @@ Per million tokens on 2026-08-26, at the peak rate — see
 [DeepSeek's pricing](https://api-docs.deepseek.com/quick_start/pricing) for
 current figures:
 
-| | `deepseek-v4-flash` | `anthropic/claude-sonnet-5` |
+| | `deepseek-v4-flash` | `anthropic/claude-sonnet-5` (for comparison) |
 |---|---|---|
 | Input | $0.44 | $2.00 |
 | Output | $1.32 | $10.00 |
 
-**Worth knowing about the shipped default:** the OpenRouter default in 1.3.0 is
-`anthropic/claude-sonnet-5`, the most expensive option in the picker. If you
-saved an OpenRouter key and never touched the model picker, that is what you are
-being billed for, and almost anything else you choose is cheaper.
+**A default is a starting point, not a recommendation.** Each provider's default
+is a reasonable middle of its own catalog, and none of them is chosen to be the
+cheapest thing available. If you saved a key and never opened the picker, it is
+worth one look — the spread between models is wide enough that the choice
+matters more than almost anything else you can change.
 
-Prefer a direct DeepSeek key for everyday use. OpenRouter is what you add when
+**Gemini's default, `gemini-3.7-flash`, is free to run** on a free-tier key, and
+is why Gemini is the easiest place to start. It is also where you will meet
+[rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first)
+soonest, because the free tier allows only a few requests a minute and one
+question can take several.
+
+Prefer a direct DeepSeek key for sustained use. OpenRouter is what you add when
 you want the choice — one key reaching many vendors' catalogs, plus any model id
 they publish, so you are not limited to what one provider happens to offer. What
 that choice costs is then down to the model you make with it. See

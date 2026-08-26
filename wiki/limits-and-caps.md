@@ -49,9 +49,16 @@ message cap, producing *"This conversation is too long for the selected model.
 Start a new chat."* Either way the fix is a new chat, which is cheaper anyway.
 
 Cairn also rate-limits chat requests per account — hitting it gives *"Too many
-requests. Slow down a moment."* Separately, your **provider** enforces its own
-rate limits and credit balance, which surface as their own messages. See
-[bring your own key](bring-your-own-key.md).
+requests. Slow down a moment."*
+
+Separately, your **provider** enforces its own rate limits and credit balance,
+which surface as their own messages — and those are the ones you are far more
+likely to meet. Cairn cannot raise them and does not know what they are. The
+number that matters is not questions per minute but **requests** per minute: one
+question can take five or six calls, because reading a knowledge-base file,
+searching the web and writing the answer are separate requests. On Gemini's free
+tier, which allows only a few a minute, that arrives quickly. See
+[rate limits](bring-your-own-key.md#rate-limits-and-why-gemini-meets-them-first).
 
 ## Knowledge bases
 

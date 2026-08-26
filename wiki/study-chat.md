@@ -14,7 +14,7 @@ It arrived in version **1.3.0**, alongside [knowledge bases](knowledge-bases.md)
 Two conditions, both required:
 
 1. **Be signed in.** Guests see the Chat tab locked with a sign-in hint.
-2. **Save your own API key** for DeepSeek or OpenRouter in **Settings**. Until
+2. **Save your own API key** for Gemini, DeepSeek or OpenRouter in **Settings**. Until
    then the composer is disabled. See [bring your own key](bring-your-own-key.md).
 
 There is no Cairn-provided model and no free tier to run out of. You pay a

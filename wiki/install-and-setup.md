@@ -48,7 +48,7 @@ Across the top of the sidebar:
    your browser. Signing in adds cross-device sync and lets you post public
    traces, rate lectures, and use the chat. See [accounts and sync](accounts-and-sync.md).
 5. **Optionally turn on the chat.** It stays locked until you save your own
-   DeepSeek or OpenRouter API key in **Settings**. See
+   Gemini, DeepSeek or OpenRouter API key in **Settings**. See
    [bring your own key](bring-your-own-key.md).
 
 ## Appearance

@@ -2,8 +2,8 @@
 
 This is the knowledge base for **Cairn itself**: the Chrome extension that helps
 people finish university lecture courses on YouTube. Everything here describes
-the shipped product at **version 1.3.0** — what it does, how to use it, what it
-costs, and what happens to a user's data.
+the shipped product — what it does, how to use it, what it costs, and what
+happens to a user's data.
 
 Cairn tracks watch progress automatically against courses you add from YouTube
 playlists, shows short timestamped notes — *traces* — that other learners left
@@ -58,9 +58,10 @@ endpoints, or the database — and it does not describe unshipped features. See
 
 - [The study chat](wiki/study-chat.md) — what it is, how to turn it on, what it
   knows without being told, and how it writes.
-- [Bring your own key](wiki/bring-your-own-key.md) — DeepSeek for a cheap
-  default, OpenRouter for the run of the catalog, Tavily for web search; where a
-  key is stored, what drives the bill, and every provider error explained.
+- [Bring your own key](wiki/bring-your-own-key.md) — Gemini for a free start,
+  DeepSeek for a cheap one, OpenRouter for the run of the catalog, Tavily for
+  web search; where a key is stored, what drives the bill, why rate limits
+  arrive sooner than expected, and every provider error explained.
 - [Models and thinking levels](wiki/models-and-thinking.md) — the model picker,
   defaults, which model to pick and what it costs (a dated recommendation, not a
   standing one), arbitrary OpenRouter model ids, and when more thinking is worth
@@ -96,7 +97,7 @@ endpoints, or the database — and it does not describe unshipped features. See
   lives, what becomes public, what reaches an AI provider, and how to delete
   things.
 - [Limits and caps](wiki/limits-and-caps.md) — every enforced number in one
-  table.
+  table, and how Cairn's own limits differ from your provider's.
 - [Troubleshooting](wiki/troubleshooting.md) — progress not tracking, imports
   failing, the chat locked or erroring, missing chats, sync lag.
 

@@ -1,9 +1,9 @@
 # Sources
 
 Everything in this knowledge base was compiled from Cairn's own public surfaces
-and from the shipped extension itself, at **version 1.3.0**, on **2026-08-26**.
-There is no course website to crawl and no lecture transcripts, because this KB
-is about the tool rather than about a course.
+and from the shipped extension itself, first on **2026-08-26**. There is no
+course website to crawl and no lecture transcripts, because this KB is about the
+tool rather than about a course.
 
 | Source | Kind | Local copy | Fetched |
 |---|---|---|---|
@@ -15,6 +15,10 @@ is about the tool rather than about a course.
 | [`chaimantec/cairn-kb-cs224n`](https://github.com/chaimantec/cairn-kb-cs224n) | A published knowledge base, used as the worked example | — | 2026-08-26 |
 | chaimantec, Cairn's maker | Authorship, the *Death Stranding* inspiration, and the current provider recommendation — stated directly, not published anywhere else | — | 2026-08-26 |
 | [DeepSeek pricing](https://api-docs.deepseek.com/quick_start/pricing) | `deepseek-v4-flash` peak/off-peak rates and the peak hours | — | 2026-08-26 |
+| [Gemini API rate limits](https://ai.google.dev/gemini-api/docs/rate-limits) | That limits are counted per minute and per day, are applied per Google project rather than per key, and that the daily one resets at midnight US Pacific | — | 2026-08-26 |
+| [Google AI Studio rate limit page](https://aistudio.google.com/rate-limit) | Where a user finds the limits actually applied to their own key — Google no longer publishes the per-model figures in its docs | — | 2026-08-26 |
+| [Gemini API terms](https://ai.google.dev/gemini-api/terms) | That the free tier permits Google to use prompts and responses to improve its products, and the paid tier does not | — | 2026-08-26 |
+| [OpenRouter rate limits](https://openrouter.ai/docs/api-reference/limits) | That paid models carry no gateway-level request cap, so a rate limit reflects the upstream vendor rather than the user's balance | — | 2026-08-26 |
 
 ## What is deliberately not here
 
