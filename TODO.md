@@ -69,9 +69,24 @@ source in their own right since none of them appears on a public page.
       `wiki/faq.md`, `wiki/glossary.md`, `INDEX.md`
 - [x] `deepseek-v4-flash` direct from DeepSeek is the current recommendation —
       `wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`, `wiki/faq.md`
-- [x] OpenRouter's caching problem can raise cost for the same model —
-      `wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`,
+- [x] Why caching decides the bill, corrected against the providers' own docs:
+      caching follows the provider, not the gateway — DeepSeek, OpenAI, Gemini
+      and Grok cache automatically, Anthropic's models cache only when the
+      request asks. `wiki/models-and-thinking.md`, `wiki/bring-your-own-key.md`,
       `wiki/troubleshooting.md`, `wiki/faq.md`
+- [x] Note that the shipped 1.3.0 OpenRouter default, `anthropic/claude-sonnet-5`,
+      is both the priciest option in the picker and the one whose caching is
+      conditional
 - [x] `sources.md` — maker as a source, and which claims rest on it
 - [x] `kb.json` — provenance source and caveat
 - [x] Link sweep and commit
+
+### Open — depends on the extension, not the KB
+
+- [ ] If the OpenRouter default changes from `anthropic/claude-sonnet-5`, update
+      `wiki/models-and-thinking.md` (defaults table and the recommendation
+      section), `wiki/faq.md` and `wiki/troubleshooting.md`, all of which now
+      name it. Recommendation put to the maker on 2026-08-26 was
+      `google/gemini-3.7-flash` — automatic caching, vision, 1M context, and
+      about a fifth of the price. Not documented here until it ships: this KB
+      describes what ships.

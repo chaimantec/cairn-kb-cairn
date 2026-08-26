@@ -59,11 +59,19 @@ supports DeepSeek and OpenRouter, plus Tavily for optional web search. See
 
 **Which model should I use?**
 `deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — that is
-the current recommendation, and the DeepSeek default. Reaching a model through
-OpenRouter instead can cost more than it should, because prompt caching does not
-always work as expected through the gateway and an uncached conversation is
-billed in full on every turn. Keep OpenRouter for models DeepSeek does not
+the current recommendation, and the DeepSeek default. It is cheap, and it caches
+the repeated part of a conversation automatically, which is most of what you
+would otherwise be paying for. Keep OpenRouter for models DeepSeek does not
 publish. See [models and thinking levels](models-and-thinking.md).
+
+**Why is a Claude model through OpenRouter more expensive than it looks?**
+Because Anthropic's models cache only when the request explicitly asks them to,
+while DeepSeek, OpenAI, Gemini and Grok all cache automatically. Cairn re-sends
+the earlier messages with each new one, so without caching you pay full price
+for the whole conversation on every turn. The OpenRouter default in 1.3.0 is
+`anthropic/claude-sonnet-5` — if you saved an OpenRouter key and never opened
+the model picker, that is what you are being billed for. See
+[models and thinking levels](models-and-thinking.md).
 
 **Where is my key stored?**
 Encrypted on Cairn's servers, never in your browser and never sent back to it.

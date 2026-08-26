@@ -14,6 +14,8 @@ is about the tool rather than about a course.
 | Cairn 1.3.0, installed | The shipped UI — labels, defaults, limits, error messages | — | 2026-08-26 |
 | [`chaimantec/cairn-kb-cs224n`](https://github.com/chaimantec/cairn-kb-cs224n) | A published knowledge base, used as the worked example | — | 2026-08-26 |
 | chaimantec, Cairn's maker | Authorship, the *Death Stranding* inspiration, and the current provider recommendation — stated directly, not published anywhere else | — | 2026-08-26 |
+| [Anthropic prompt caching docs](https://docs.claude.com/en/docs/build-with-claude/prompt-caching) | That Claude models cache only on explicit `cache_control`, and the read/write multipliers | — | 2026-08-26 |
+| [OpenRouter prompt caching docs](https://openrouter.ai/docs/features/prompt-caching) | Which providers cache automatically, and their multipliers | — | 2026-08-26 |
 
 ## What is deliberately not here
 
@@ -28,11 +30,16 @@ Cairn's source code is not public, so nothing here is quoted from it.
 
 ## The maker-supplied facts
 
-Four claims in this knowledge base come from Cairn's maker directly rather than
+Three claims in this knowledge base come from Cairn's maker directly rather than
 from a public page, and are marked as such where they appear: that Cairn is made
-by chaimantec, that its design is inspired by *Death Stranding*, that
+by chaimantec, that its design is inspired by *Death Stranding*, and that
 `deepseek-v4-flash` used with a direct DeepSeek key is the current
-recommendation, and that reaching a model through OpenRouter may cost more
-because prompt caching does not always work as expected through it. The first
-two are durable; the last two are a snapshot of provider behaviour in August
-2026 and should be re-checked before being quoted as current.
+recommendation. The first two are durable; the third is a snapshot of provider
+prices in August 2026 and should be re-checked before being quoted as current.
+
+The supporting claim about **prompt caching** — that DeepSeek, OpenAI, Gemini
+and Grok cache automatically while Anthropic's models cache only when the
+request explicitly asks — is provider-documented behaviour, checked against
+Anthropic's prompt-caching documentation and OpenRouter's prompt-caching page on
+2026-08-26, not something taken on assertion. It is provider behaviour and will
+move; re-check it rather than trusting this page's date.
