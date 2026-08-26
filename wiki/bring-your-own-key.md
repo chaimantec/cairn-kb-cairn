@@ -22,11 +22,13 @@ additive: with it, `web_search` and `web_fetch` appear; without it, they do not.
 **If you are only going to set up one, make it DeepSeek.** A DeepSeek key
 running `deepseek-v4-flash` is the current recommendation for ordinary study
 use: it is cheap per token, and it caches the repeated part of a conversation
-automatically, which is what actually decides the bill. OpenRouter earns its
-keep when you want a model DeepSeek does not publish — a frontier model for a
-hard derivation, or something with vision for
-[screenshots](images-in-chat.md). Saving both and switching per question is a
-perfectly good setup. See [models and thinking levels](models-and-thinking.md).
+automatically, which is what actually decides the bill. **OpenRouter is what you
+add when you want the choice** — one key reaching many vendors' catalogs, plus
+any model id OpenRouter publishes, so you can pick on whatever grounds matter to
+you that day: price, speed, whether it reads
+[images](images-in-chat.md), or simply a model you would rather use. Saving both
+and switching per question is a perfectly good setup. See
+[models and thinking levels](models-and-thinking.md).
 
 Getting a key means signing up with that provider and creating one in their
 dashboard. Cairn does not resell or provision keys, and cannot help with billing
@@ -58,8 +60,9 @@ account deletes your keys.
 Whatever your provider charges for the model you pick, and nothing else. Three
 things drive the bill more than anything:
 
-- **The model.** A frontier model through OpenRouter costs many times what a
-  fast, cheap model does. See [models and thinking levels](models-and-thinking.md).
+- **The model.** Prices across the catalog differ by more than an order of
+  magnitude — a frontier model costs many times what a fast, cheap one does.
+  See [models and thinking levels](models-and-thinking.md).
 - **Whether that model caches.** Because the earlier messages are re-sent with
   every new one, most of a long conversation is text the provider has already
   seen, and providers charge roughly a tenth of the normal price to re-read

@@ -69,8 +69,10 @@ picker and the one whose caching is conditional. If you have saved an OpenRouter
 key and never touched the model picker, that is what you are being billed for.
 Choosing almost anything else is cheaper.
 
-Prefer a direct DeepSeek key for everyday use, and reach for OpenRouter when you
-specifically want a model DeepSeek does not publish. See
+Prefer a direct DeepSeek key for everyday use. OpenRouter is what you add when
+you want the choice — one key reaching many vendors' catalogs, plus any model id
+they publish, so you are not limited to what one provider happens to offer. What
+that choice costs is then down to the model you make with it. See
 [what it costs](bring-your-own-key.md).
 
 This is a description of today's providers and today's prices, not a property of
@@ -101,9 +103,9 @@ A reasonable pattern:
   [knowledge base](knowledge-bases.md) and quoting it back.
 - **A strong model at higher thinking** for the moment you are actually stuck on
   the mathematics, or when you want a derivation worked through step by step.
-  This is what an OpenRouter key is for. Switching to it for a few hard questions
-  rather than leaving it selected for a whole session is what keeps it
-  affordable — doubly so for a Claude model, for the caching reason above.
+  Switching to one for a few hard questions rather than leaving it selected for a
+  whole session is what keeps it affordable — doubly so for a Claude model, for
+  the caching reason above.
 
 You can change model mid-conversation; the change applies to the next message.
 

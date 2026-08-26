@@ -61,8 +61,9 @@ supports DeepSeek and OpenRouter, plus Tavily for optional web search. See
 `deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — that is
 the current recommendation, and the DeepSeek default. It is cheap, and it caches
 the repeated part of a conversation automatically, which is most of what you
-would otherwise be paying for. Keep OpenRouter for models DeepSeek does not
-publish. See [models and thinking levels](models-and-thinking.md).
+would otherwise be paying for. Add OpenRouter when you want the choice — one key
+reaching many vendors' catalogs, and any model id they publish. See
+[models and thinking levels](models-and-thinking.md).
 
 **Why is a Claude model through OpenRouter more expensive than it looks?**
 Because Anthropic's models cache only when the request explicitly asks them to,

@@ -58,9 +58,9 @@ endpoints, or the database — and it does not describe unshipped features. See
 
 - [The study chat](wiki/study-chat.md) — what it is, how to turn it on, what it
   knows without being told, and how it writes.
-- [Bring your own key](wiki/bring-your-own-key.md) — DeepSeek, OpenRouter and
-  Tavily, which one to set up first, where a key is stored, what drives the
-  bill, and every provider error explained.
+- [Bring your own key](wiki/bring-your-own-key.md) — DeepSeek for a cheap
+  default, OpenRouter for the run of the catalog, Tavily for web search; where a
+  key is stored, what drives the bill, and every provider error explained.
 - [Models and thinking levels](wiki/models-and-thinking.md) — the model picker,
   defaults, why `deepseek-v4-flash` direct from DeepSeek is the recommendation
   and OpenRouter can cost more for the same model, arbitrary OpenRouter model
