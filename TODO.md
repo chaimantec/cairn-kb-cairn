@@ -156,3 +156,18 @@ source in their own right since none of them appears on a public page.
       acts on. What survives is the dated recommendation, plain model prices, and
       the warning about the expensive OpenRouter default. Keep this KB to what a
       user meets.
+
+- [x] **Slide images, 2026-09-06:** documented that a knowledge base may carry
+      the course's slides as pictures and that a learner can just ask to see one
+      — the case that motivates it being a recording that blanks or blurs a
+      figure it could not license, where the deck-built knowledge base still has
+      it. Written as a general knowledge-base capability, with
+      `chaimantec/cairn-kb-cs336` (373 images, 14 lectures) as the illustration
+      rather than the subject. Touched `wiki/images-in-chat.md` (the new
+      section), `wiki/knowledge-bases.md`, `wiki/kb-repo-layout.md`,
+      `wiki/building-a-knowledge-base.md`, `wiki/chat-tools.md`,
+      `wiki/study-chat.md`, `wiki/asking-good-questions.md`, `wiki/faq.md`,
+      `wiki/glossary.md`, `INDEX.md`, `sources.md` and `kb.json`. Corrected the
+      claim in `wiki/building-a-knowledge-base.md` that prose is the only
+      representation of a figure a knowledge base will have — true before this
+      step existed, false now.

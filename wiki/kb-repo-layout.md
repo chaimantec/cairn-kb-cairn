@@ -13,6 +13,7 @@ kb.json               machine-readable self-description: coverage, method, cavea
 wiki/                 durable pages: one per lecture, plus cross-lecture topics
 raw/transcripts/      lecture transcripts with [MM:SS] paragraph marks
 raw/slides/           full text of every slide, numbered
+raw/images/           slides rendered as pictures, when the build included them
 raw/pdfs/             slides and handouts, when committed at all
 sources.md            inventory: canonical source URL → local file, fetch date
 ```
@@ -41,6 +42,15 @@ misleading if cited as the course, so it says so in both places.
 URL with a line on what each is good for. It is the only way the assistant
 learns that a sibling knowledge base exists; it is told not to guess repository
 names.
+
+**`raw/images/`** is optional and holds one folder per lecture of whole slides
+rendered as pictures, named by slide number. It is the one directory that copies
+course material into the repository rather than pointing at it, so not every
+knowledge base has one. Each image is linked from the two files that describe
+that slide — the slide's own entry in `raw/slides/`, and the wiki passage that
+cites it — rather than from an index, so the assistant finds a picture by
+reading the page it belongs to. See [images in chat](images-in-chat.md) for what
+that looks like from the chat.
 
 ## Conventions inside the wiki
 

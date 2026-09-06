@@ -94,6 +94,14 @@ A public GitHub repository built from a course's own materials — transcripts,
 slide text, topic pages — that the chat reads before answering, and cites. See
 [knowledge bases](knowledge-bases.md).
 
+**The video blanks out a slide, and the figure being discussed isn't on screen.
+Can I still see it?**
+Often, yes — ask the assistant to show you the slide. Recordings sometimes blank
+or blur a figure that could not be licensed for public video, but a knowledge
+base is built from the deck rather than the recording, so where it was built
+with slide images the figure is still there. See
+[images in chat](images-in-chat.md).
+
 **Does every course have one?**
 No, not yet. They are built one course at a time. Courses that have one show a
 link in the catalog.

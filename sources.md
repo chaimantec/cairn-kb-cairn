@@ -1,7 +1,8 @@
 # Sources
 
 Everything in this knowledge base was compiled from Cairn's own public surfaces
-and from the shipped extension itself, first on **2026-08-26**. There is no
+and from the shipped extension itself, first on **2026-08-26** and revised since;
+the fetch date on each row below says when that source was last read. There is no
 course website to crawl and no lecture transcripts, because this KB is about the
 tool rather than about a course.
 
@@ -13,6 +14,7 @@ tool rather than about a course.
 | Extension release notes | The changelog, verbatim | [`raw/changelog.md`](raw/changelog.md) | 2026-08-26 |
 | Cairn, installed | The shipped UI — labels, defaults, limits, error messages | — | 2026-08-26 |
 | [`chaimantec/cairn-kb-cs224n`](https://github.com/chaimantec/cairn-kb-cs224n) | A published knowledge base, used as the worked example | — | 2026-08-26 |
+| [`chaimantec/cairn-kb-cs336`](https://github.com/chaimantec/cairn-kb-cs336) | A published knowledge base carrying slide images — the example for what `raw/images/` holds and how many | — | 2026-09-06 |
 | chaimantec, Cairn's maker | Authorship, the *Death Stranding* inspiration, and the current provider recommendation — stated directly, not published anywhere else | — | 2026-08-26 |
 | [DeepSeek pricing](https://api-docs.deepseek.com/quick_start/pricing) | `deepseek-v4-flash` peak/off-peak rates and the peak hours | — | 2026-08-26 |
 | [OpenRouter rate limits](https://openrouter.ai/docs/api-reference/limits) | That paid models carry no gateway-level request cap, so a rate limit reflects the upstream vendor rather than the user's balance | — | 2026-08-26 |

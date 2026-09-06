@@ -60,6 +60,10 @@ visible to everyone watching that lecture, under your nickname.
 **Side panel** — Chrome's built-in panel beside the page, where the Cairn
 sidebar lives.
 
+**Slide image** — a whole lecture slide stored in a knowledge base as a picture,
+so the chat can show a figure rather than only describe it. Optional, and not
+every knowledge base has them. See [images in chat](images-in-chat.md).
+
 **Study chat** — the optional AI assistant in the Live tab, scoped to the
 lecture playing. See [the study chat](study-chat.md).
 

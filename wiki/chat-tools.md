@@ -37,6 +37,12 @@ Two things fall out of this that are useful to know as a user:
   never to link a file it has not actually read. So a citation in an answer is a
   link you can open. Slides and PDFs are cited the same way: the link is
   returned instead of the file contents, so you get the actual deck.
+- **Slide images come back as pictures.** When a knowledge base holds rendered
+  slides and the assistant reads one, what comes back is an address it can
+  display, so the slide appears in the answer rather than as a link to click.
+  Reading an address that is not in the repository returns an error instead,
+  which is what stops it guessing one. See
+  [images in chat](images-in-chat.md).
 
 Long files come back in pages of about 500 lines, with a note saying how much of
 the file you received, so the assistant can keep reading if the part it needs is

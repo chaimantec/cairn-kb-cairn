@@ -45,7 +45,7 @@ looked at:
 
 | Capability | Needs | What it does |
 |---|---|---|
-| Read the course [knowledge base](knowledge-bases.md) | The course has one attached | Reads the actual transcripts, slide text and topic pages for this course, and cites the file. |
+| Read the course [knowledge base](knowledge-bases.md) | The course has one attached | Reads the actual transcripts, slide text and topic pages for this course, and cites the file. Can show a slide as a picture, where the knowledge base has them. |
 | Search and read the web | A Tavily key saved | Looks things up outside the course and reads specific pages. |
 | Remember how you like answers | Nothing | Saves standing instructions that apply to every future chat. |
 

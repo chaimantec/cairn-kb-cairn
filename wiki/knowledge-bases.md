@@ -22,6 +22,9 @@ With one attached, the assistant:
 - **cites the file it used**, as an openable GitHub link, so you can check it;
 - **can quote the transcript** at a specific moment, and point you at a specific
   slide or handout PDF;
+- **can show you a slide as a picture**, where the knowledge base was built with
+  slide images — which is how you see a figure the lecture recording itself could
+  not show; see [images in chat](images-in-chat.md);
 - **says so when the knowledge base does not cover your question**, and answers
   from general knowledge instead — rather than blurring the two.
 
@@ -33,6 +36,9 @@ Roughly, for each course:
   quoted and cited.
 - **Slide decks transcribed slide by slide** — the text, the equations as
   written, tables of numbers, and figures described in prose.
+- **Slide images**, optionally — the figure-bearing slides rendered as pictures
+  and committed beside their text, so the assistant can show a figure rather
+  than only describe it.
 - **Wiki pages**: one per lecture, plus topic pages for concepts that span
   several lectures, all interlinked.
 - **An index** naming every page with a one-line description of what it holds.
@@ -48,6 +54,11 @@ public one:
 All 23 lectures, with timestamped transcripts, the full text of every slide
 deck, and 86 interlinked topic pages. It is worth opening once just to see the
 shape of the thing.
+
+[`chaimantec/cairn-kb-cs336`](https://github.com/chaimantec/cairn-kb-cs336) —
+Language Modeling from Scratch — is the one to open to see slide images: 373 of
+them across 14 lectures, sitting in `raw/images/` beside the slide text they
+illustrate.
 
 ## You do not need Cairn to read one
 

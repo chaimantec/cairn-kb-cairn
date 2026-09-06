@@ -71,7 +71,8 @@ endpoints, or the database — and it does not describe unshipped features. See
 - [Chat memory](wiki/chat-memory.md) — standing instructions about how you like
   to be answered, the 50-entry cap, conflicts, and forgetting.
 - [Images in chat](wiki/images-in-chat.md) — snapshotting the lecture frame,
-  attaching your own images, formats and caps.
+  attaching your own images, formats and caps, and asking the assistant to show
+  you a slide when the recording could not.
 - [Managing chats](wiki/managing-chats.md) — multiple chats, renaming, pinning,
   the two different searches, bulk cleanup, and why chats do not sync.
 - [Asking good questions](wiki/asking-good-questions.md) — the question patterns
@@ -87,7 +88,8 @@ endpoints, or the database — and it does not describe unshipped features. See
 - [Building a knowledge base](wiki/building-a-knowledge-base.md) — what a build
   involves, what it costs, and how it is resumed and updated.
 - [Knowledge base repo layout](wiki/kb-repo-layout.md) — the file-by-file
-  contract, and the conventions inside the wiki.
+  contract, the optional slide-image directory, and the conventions inside the
+  wiki.
 - [Annotating lectures](wiki/annotating-lectures.md) — the `cairn-annotate`
   skill, which drafts timed markers and posts them as personal notes.
 

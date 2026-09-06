@@ -41,6 +41,20 @@ Things written down — equations, tables, citations — are usually best answer
 from the slides; things said aloud, from the transcript. Asking for one or the
 other explicitly tends to get you the more precise answer.
 
+## Ask to see the slide, not just read about it
+
+Where a course's knowledge base was built with slide images, you can ask for the
+picture:
+
+- *"Show me that slide."*
+- *"They're talking about a figure I can't see. Is it in the knowledge base?"*
+- *"Show me the diagram, then walk me through it."*
+
+This is the pattern worth remembering when the recording blanks or blurs a
+slide, which happens when a figure could not be licensed for the video. The
+knowledge base was built from the deck rather than the video, so the figure is
+usually still there. See [images in chat](images-in-chat.md).
+
 ## Calibrate the explanation to you
 
 - *"Explain this like I've only done one calculus course."*

@@ -31,18 +31,25 @@ for the skill.
    cannot answer a question about it. The verbatim captions are kept alongside
    the edited version, so the edit can be checked.
 4. **Reads the slide decks.** Each deck is transcribed slide by slide — text,
-   equations as written, tables, and figures described in prose, since prose is
-   the only representation of an image the knowledge base will have. Slide
-   numbering is derived from the deck rather than assumed, because hidden slides
-   make printed numbers drift from page numbers.
-5. **Crawls the course website** for handouts and problem sets, recording each
+   equations as written, tables, and figures described in prose. Slide numbering
+   is derived from the deck rather than assumed, because hidden slides make
+   printed numbers drift from page numbers.
+5. **Renders the slide images, if you asked for them.** Optional, and off by
+   default. Every figure-bearing slide is rendered as a picture and committed
+   beside its text, so the assistant can show a figure instead of only
+   describing it — which is what lets a learner see a figure their lecture
+   recording could not show. This is the one step that copies course material
+   into the repository rather than linking to it, so it is a decision the person
+   building makes rather than a default: check the deck's licence, and expect
+   tens of megabytes per course against a few for the markdown.
+6. **Crawls the course website** for handouts and problem sets, recording each
    with its canonical URL. PDFs are normally linked rather than committed: the
    reader is an agent that navigates markdown, and a course's decks routinely
    run to well over 100 MB.
-6. **Writes the wiki** — a page per lecture, plus topic pages for concepts that
+7. **Writes the wiki** — a page per lecture, plus topic pages for concepts that
    span lectures — with mathematics reconstructed into rendered LaTeX rather
    than left as the captions' spoken form.
-7. **Publishes** the public repo and sets the knowledge base URL on the catalog
+8. **Publishes** the public repo and sets the knowledge base URL on the catalog
    entry.
 
 ## What it costs, and how long it takes

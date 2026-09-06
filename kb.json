@@ -41,6 +41,7 @@
       "https://cairnstudy.com/privacy.html",
       "https://chromewebstore.google.com/detail/cairn/ipoiephjmljacojnhacbkbfbelicifim",
       "Cairn as shipped",
+      "https://github.com/chaimantec/cairn-kb-cs336",
       "chaimantec (Cairn's maker), direct statement, 2026-08-26",
       "https://api-docs.deepseek.com/quick_start/pricing",
       "https://openrouter.ai/docs/api-reference/limits"
@@ -54,5 +55,5 @@
     ]
   },
   "entryPoint": "INDEX.md",
-  "updated": "2026-08-26"
+  "updated": "2026-09-06"
 }
