@@ -223,3 +223,32 @@ source in their own right since none of them appears on a public page.
 - [ ] `deepseek-v4-flash-vision-exp` was reported deprecated on 2026-09-13, but
       it appears nowhere in this repo or its git history — it was never
       documented, so there was nothing to remove.
+
+## Revision 2026-10-21 — the chat can save notes
+
+- [x] **The study chat has a note-saving tool.** Asked to — *"save that as a
+      note"* — it writes the point up and posts it to the lecture: pinned at the
+      playback position unless the point belongs to another moment, private
+      unless the student asks for public, and prefixed 🚩, the marker
+      `cairn-annotate` already uses. It never saves on its own initiative. The
+      main section is in `wiki/chat-tools.md` (a table row and "Saving a note to
+      the lecture"); supporting edits in `wiki/study-chat.md` (capability row),
+      `wiki/traces-and-notes.md` (the agent section now covers both agents),
+      `wiki/chat-memory.md` ("remember this" about content gets a note, not a
+      memory), `wiki/live-tab.md`, `wiki/faq.md` and `INDEX.md`.
+- [x] Two caps in `wiki/limits-and-caps.md`: 5 notes in one reply, 2,000
+      characters a note. The assistant aims well under that — a few sentences —
+      but the page lists only what is enforced.
+- [x] `wiki/privacy-and-data.md` — a saved note is an ordinary note, so unlike
+      the conversation it came from it reaches Cairn's servers.
+- [x] `sources.md` and `kb.json` — the maker's account as a dated source.
+
+### Open
+
+- [ ] **The annotation re-run removes chat-saved notes.** `cairn-annotate`
+      clears every 🚩 note on a lecture before posting, and chat notes carry the
+      same flag. Documented as a warning in `wiki/chat-tools.md` and
+      `wiki/annotating-lectures.md` (and as a source caveat). If the skill stops
+      doing this, delete both warnings and the caveat.
+- [ ] `raw/changelog.md` stops before GLM. Re-copy it verbatim from the
+      extension's changelog once the release carrying note-saving ships.

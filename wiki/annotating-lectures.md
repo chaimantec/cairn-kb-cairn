@@ -32,7 +32,10 @@ the slides.
 - It only annotates lectures in courses **you created** in the catalog. It
   refuses other people's courses.
 - The 🚩 prefix exists so a re-run can find and replace its own previous
-  markers rather than piling duplicates on top.
+  markers rather than piling duplicates on top. A re-run removes **every** 🚩
+  note on the lecture, and notes the [study chat](chat-tools.md#saving-a-note-to-the-lecture)
+  saves for you carry the same flag — so re-annotating a lecture also removes
+  any notes the chat saved on it. Copy out anything you want to keep first.
 
 You can edit any marker afterwards, delete it, or make it public if you decide
 it is worth leaving as a [trace](traces-and-notes.md) for other learners.

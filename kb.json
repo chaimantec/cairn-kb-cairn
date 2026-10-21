@@ -44,6 +44,7 @@
       "https://github.com/chaimantec/cairn-kb-cs336",
       "chaimantec (Cairn's maker), direct statement, 2026-08-26",
       "chaimantec (Cairn's maker), direct statement, 2026-09-13",
+      "chaimantec (Cairn's maker), direct statement, 2026-10-21",
       "https://api-docs.deepseek.com/quick_start/pricing",
       "https://openrouter.ai/docs/api-reference/limits"
     ],
@@ -54,9 +55,10 @@
       "Provider rate limits are described in kind rather than in numbers, because each provider sets them per key and tier and publishes them on its own dashboard rather than in documentation.",
       "Authorship and the Death Stranding inspiration come from Cairn's maker directly rather than from a published page. So is the chat provider and model catalog, last described on 2026-09-13. The model recommendation is dated and explicitly not a standing one: the model recommended on 2026-08-26 had been withdrawn by 2026-09-13.",
       "No per-token price has been verified since 2026-08-26. The pages quote none for the current DeepSeek models and link to DeepSeek's own pricing instead, rather than carry figures for a withdrawn model.",
-      "The verbatim documents in raw/ predate GLM: the landing copy offers a choice of DeepSeek or OpenRouter only, and the privacy policy's third-party list names only DeepSeek, OpenRouter and Tavily. They are left as published, and the wiki pages that quote them note the gap."
+      "The verbatim documents in raw/ predate GLM: the landing copy offers a choice of DeepSeek or OpenRouter only, and the privacy policy's third-party list names only DeepSeek, OpenRouter and Tavily. They are left as published, and the wiki pages that quote them note the gap.",
+      "How the study chat saves notes comes from the maker's build of 2026-10-21 rather than a published page. The warning that re-running cairn-annotate removes chat-saved notes describes how the two features interact today and is the claim most likely to change."
     ]
   },
   "entryPoint": "INDEX.md",
-  "updated": "2026-09-13"
+  "updated": "2026-10-21"
 }

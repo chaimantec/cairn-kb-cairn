@@ -15,6 +15,7 @@ Which tools exist depends on your setup:
 | `web_search` | A Tavily key is saved | Searches the web and returns titles, URLs and snippets. |
 | `web_fetch` | Same | Reads a specific web page. |
 | `memory_add` / `memory_update` / `memory_delete` | Always | Saves, changes or forgets a standing instruction. |
+| `note_post` | Always | Saves something from the conversation as a note on the lecture. |
 
 ## Reading the knowledge base
 
@@ -71,7 +72,43 @@ reasonable way to run it — the course materials are usually what you want.
 The memory tools are always available, since they need no configuration. They
 are covered in [chat memory](chat-memory.md). The short version: the assistant
 changes memory only when you ask it to, never on its own initiative, and never
-to store notes about what you are studying.
+to store notes about what you are studying — that is what
+[saving a note](#saving-a-note-to-the-lecture) is for.
+
+## Saving a note to the lecture
+
+When an exchange produces something worth keeping, ask the assistant to save it:
+*"save that as a note"*, *"pin this to the lecture"*, *"note the bit about the
+scaling factor"*. It writes the point up as a [note](traces-and-notes.md) and
+posts it to the lecture you are watching, where it sits in the Notes feed
+beside the ones you write yourself.
+
+- **Only when you ask.** It never saves a note on its own initiative. If an
+  answer looks worth keeping it may offer once, and then waits for a yes.
+- **Marked as AI-written.** The note starts with a 🚩 — the same flag the
+  [annotation skill](annotating-lectures.md) puts on its markers — so you can
+  tell at a glance which notes you did not write.
+- **Pinned where you are.** By default it goes at your playback position when
+  you sent the message. If the point belongs to a different moment, such as one
+  the assistant found in a timestamped transcript, it pins it there instead, and
+  it cannot pin one past the end of the lecture.
+- **Private unless you say otherwise.** Ask for a public note and it posts one,
+  shown to everyone on that lecture under your nickname, like any
+  [trace](traces-and-notes.md).
+- **Written to be read cold.** It is told to write a few sentences that make
+  sense weeks later with the video paused at that moment: the actual idea and
+  why it matters, not "as discussed above". Notes show text exactly as written,
+  so formulas are spelled out in words rather than in LaTeX.
+
+The chip reads **Saved a note**, and the reply says where it was pinned. Because
+the note is pinned at the moment you are watching, it also floats over the chat
+straight away, the same way any nearby note does.
+
+From then on it is an ordinary note. Edit it, delete it, or make it public from
+the Notes side, and it syncs to your devices like the rest. One thing to know if
+you also use the annotation skill: a re-run of that skill on a lecture removes
+every 🚩 note on it before posting fresh markers, and that includes notes the
+chat saved.
 
 ## When there is no knowledge base
 
@@ -83,5 +120,6 @@ add a knowledge base URL in the course's edit dialog — see
 ## Related pages
 
 - [Knowledge bases](knowledge-bases.md)
+- [Traces and notes](traces-and-notes.md)
 - [Asking good questions](asking-good-questions.md)
 - [Bring your own key](bring-your-own-key.md)

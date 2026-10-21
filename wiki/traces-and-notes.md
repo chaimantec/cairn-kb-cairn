@@ -74,12 +74,20 @@ suggests:
   rule" earns its place. "Good lecture" does not.
 - **Self-contained.** Nobody can ask you what you meant.
 
-## Generating traces with an agent
+## Notes written by an agent
+
+The [study chat](study-chat.md) can save a note for you. Ask it to — *"save that
+as a note"* — and it writes the point up and posts it to the lecture, pinned to
+where you are and private unless you ask for public. See
+[saving a note to the lecture](chat-tools.md#saving-a-note-to-the-lecture).
 
 The `cairn-annotate` skill drafts timed markers across a whole lecture and posts
-them back as your *personal* notes, prefixed with a flag emoji so they are easy
-to find and replace. It is a way to pre-mark a lecture before watching it. See
-[annotating lectures](annotating-lectures.md).
+them back as your *personal* notes. It is a way to pre-mark a lecture before
+watching it. See [annotating lectures](annotating-lectures.md).
+
+Both start their notes with a 🚩, so a note you did not write yourself is marked
+as such. Once posted, either kind is an ordinary note that you can edit, delete
+or make public.
 
 ## Related pages
 

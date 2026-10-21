@@ -86,6 +86,11 @@ policy's list of third parties still names only DeepSeek, OpenRouter and Tavily,
 because GLM was added to the extension after that policy was last updated; if
 you use a GLM key, read Z.ai's own policy for what it does with that traffic.
 
+**A note the assistant saves is an ordinary note.** If you ask it to save
+something to the lecture, that note is stored and synced like one you typed —
+so unlike the conversation it came from, it does reach Cairn's servers. It is
+private unless you ask for a public one.
+
 **Your API key** is encrypted at rest on Cairn's servers and never sent back to
 your browser. The policy is candid about the limits: this defends against a
 database-only leak, not a full server compromise, and the key must exist

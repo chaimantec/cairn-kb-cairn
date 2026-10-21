@@ -90,6 +90,12 @@ Encrypted on Cairn's servers, never in your browser and never sent back to it.
 No. They live in your browser only, are not tied to your account, and do not
 sync between devices.
 
+**Can the chat save something as a note?**
+Yes — ask it to: *"save that as a note"*. It writes the point up and posts it to
+the lecture, pinned to where you are, private unless you ask for public, and
+starting with a 🚩 so you can tell it from your own. It only does this when you
+ask. See [saving a note to the lecture](chat-tools.md#saving-a-note-to-the-lecture).
+
 **Why does the assistant know what I'm looking at?**
 Every message carries the course, the lecture, and your playback position — so
 "what did he just say?" resolves against the right moment.

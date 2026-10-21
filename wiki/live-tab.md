@@ -42,7 +42,9 @@ trace surfaces and retires at the same moments whichever side you are looking at
 
 The Chat sub-tab is the study chat. It knows the course, the lecture, and your
 playback position, which is what lets you ask "what did he just say?" and get an
-answer about the right moment.
+answer about the right moment. Ask it to save something and it lands on the
+Notes side as a note, marked 🚩 — see
+[saving a note to the lecture](chat-tools.md#saving-a-note-to-the-lecture).
 
 It is locked for guests, and stays locked for signed-in users until an API key
 is saved — see [bring your own key](bring-your-own-key.md). Everything about

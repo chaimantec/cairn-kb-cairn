@@ -43,6 +43,8 @@ See [traces and notes](traces-and-notes.md).
 | Images downscaled to | ~**1568 px** longest edge, ~**300 KB** |
 | Saved memories | **50** |
 | Length of one memory | **400 characters** |
+| Notes the assistant can save in one reply | **5** |
+| Length of a note the assistant saves | **2,000 characters** |
 
 In practice the selected model's own context window is reached before Cairn's
 message cap, producing *"This conversation is too long for the selected model.

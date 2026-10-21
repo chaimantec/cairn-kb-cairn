@@ -17,6 +17,7 @@ tool rather than about a course.
 | [`chaimantec/cairn-kb-cs336`](https://github.com/chaimantec/cairn-kb-cs336) | A published knowledge base carrying slide images — the example for what `raw/images/` holds and how many | — | 2026-09-06 |
 | chaimantec, Cairn's maker | Authorship, the *Death Stranding* inspiration, and the current provider recommendation — stated directly, not published anywhere else | — | 2026-08-26 |
 | chaimantec, Cairn's maker | GLM added as a third chat provider, keyed from Z.ai and defaulting to `glm-5.3-flash`; DeepSeek's catalog moving to `deepseek-v4.1-flash` and `deepseek-v4-pro`; both flash defaults reading images — stated directly, not published anywhere else | — | 2026-09-13 |
+| chaimantec, Cairn's maker | The study chat saving notes: that it does so only when asked, the 🚩 marker it shares with `cairn-annotate`, where a note is pinned and who can see it, the two caps, and that an annotation re-run removes chat-saved notes — from the build that ships it, not published anywhere else | — | 2026-10-21 |
 | [DeepSeek pricing](https://api-docs.deepseek.com/quick_start/pricing) | Off-peak discount and the peak hours. The per-model rates once quoted here were for `deepseek-v4-flash`, which has been withdrawn; no replacement figures have been read from this page | — | 2026-08-26 |
 | [OpenRouter rate limits](https://openrouter.ai/docs/api-reference/limits) | That paid models carry no gateway-level request cap, so a rate limit reflects the upstream vendor rather than the user's balance | — | 2026-08-26 |
 
@@ -45,6 +46,12 @@ August — was withdrawn and replaced by `deepseek-v4.1-flash`, with
 `deepseek-v4-pro` above it. That is how quickly this material goes stale.
 Re-check it against the picker and the providers' own pricing pages rather than
 quoting it as current.
+
+How the study chat saves notes, documented on **2026-10-21**, is also the
+maker's account rather than a published one. Its two caps are the ones the chat
+enforces. The warning that re-running `cairn-annotate` removes chat-saved notes
+describes how the two features interact today, and is the part most likely to
+change.
 
 No per-token price has been verified since 2026-08-26, so the pages quote none
 for the current DeepSeek models and link to DeepSeek's pricing instead. The one

@@ -68,7 +68,8 @@ endpoints, or the database — and it does not describe unshipped features. See
   standing one), arbitrary OpenRouter model ids, and when more thinking is worth
   paying for.
 - [What the chat can look up](wiki/chat-tools.md) — the knowledge-base, web and
-  memory tools, what the transcript chips mean, and how citations work.
+  memory tools, saving a note to the lecture, what the transcript chips mean,
+  and how citations work.
 - [Chat memory](wiki/chat-memory.md) — standing instructions about how you like
   to be answered, the 50-entry cap, conflicts, and forgetting.
 - [Images in chat](wiki/images-in-chat.md) — snapshotting the lecture frame,

@@ -20,7 +20,11 @@ Good examples:
 
 The assistant is explicitly told **not** to save notes about the course or what
 you are studying. That is what your [notes](traces-and-notes.md) and the
-[knowledge base](knowledge-bases.md) are for.
+[knowledge base](knowledge-bases.md) are for — and if you want to keep something
+from the conversation about the material itself, the assistant can
+[save it as a note](chat-tools.md#saving-a-note-to-the-lecture) on the lecture
+instead. Saying *"remember this"* about the content gets you a note, not a
+memory.
 
 ## How to use it
 
