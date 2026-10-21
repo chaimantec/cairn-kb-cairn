@@ -14,8 +14,13 @@ The defaults, if you do not choose:
 
 | Provider | Default model |
 |---|---|
-| DeepSeek | `deepseek-v4-flash` |
+| DeepSeek | `deepseek-v4.1-flash` |
+| GLM | `glm-5.3-flash` |
 | OpenRouter | `openai/gpt-5.6-luna` |
+
+Both direct-provider defaults — `deepseek-v4.1-flash` and `glm-5.3-flash` —
+read images, so a saved DeepSeek or GLM key is enough to attach a screenshot
+without going near the picker.
 
 **Any OpenRouter model id works, listed or not.** There is a free-text field —
 *"any OpenRouter model id"* — because OpenRouter adds models faster than any
@@ -25,16 +30,19 @@ wrong for a model Cairn has no price data for; the request itself is unaffected.
 
 Your choice is remembered as your default for future chats.
 
-## The recommendation, as of 2026-08-26: `deepseek-v4-flash`, direct from DeepSeek
+## The recommendation, as of 2026-09-13: `deepseek-v4.1-flash`, direct from DeepSeek
 
 > **Dated on purpose.** Providers reprice and replace models every few months,
-> independently of Cairn's releases and faster than this page is revised. If you
-> are reading this well after 2026-08-26, check the providers' own pricing pages
-> rather than taking it as current. The picker will take whatever you choose.
+> independently of Cairn's releases and faster than this page is revised — the
+> model this section recommended in August has since been withdrawn and replaced.
+> If you are reading this well after 2026-09-13, check the providers' own pricing
+> pages rather than taking it as current. The picker will take whatever you
+> choose.
 
-If you want one answer rather than a decision, use **`deepseek-v4-flash` with a
-DeepSeek key, going to DeepSeek directly**. It is the DeepSeek default in the
-picker for this reason.
+If you want one answer rather than a decision, use **`deepseek-v4.1-flash` with
+a DeepSeek key, going to DeepSeek directly**. It is the DeepSeek default in the
+picker for this reason, and it reads images, so a screenshot of a slide works
+without switching model first.
 
 It is cheap enough that the cost of a study session stops being something you
 weigh before asking a question, and most study questions are retrieval — finding
@@ -44,14 +52,19 @@ not need a frontier model. DeepSeek also charges **half price off-peak**, and
 peak is only 01:00–04:00 and 06:00–10:00 UTC on weekdays, so evening and weekend
 study is always at the lower rate.
 
-Per million tokens on 2026-08-26, at the peak rate — see
-[DeepSeek's pricing](https://api-docs.deepseek.com/quick_start/pricing) for
-current figures:
+Per-token rates are not quoted here. `deepseek-v4.1-flash` is new enough that
+the figures this page carried for its predecessor no longer describe anything
+you can buy, and a stale price is worse than none — read
+[DeepSeek's pricing](https://api-docs.deepseek.com/quick_start/pricing) for the
+current numbers. For scale at the other end of the range,
+`anthropic/claude-sonnet-5` through OpenRouter was about $2 per million input
+tokens and $10 per million output on 2026-08-26; a flash model is a fraction of
+that.
 
-| | `deepseek-v4-flash` | `anthropic/claude-sonnet-5` (for comparison) |
-|---|---|---|
-| Input | $0.44 | $2.00 |
-| Output | $1.32 | $10.00 |
+**`deepseek-v4-pro` is the step up** within the same key, for the questions a
+flash model does not do well: a derivation you need worked through properly
+rather than a fact you need found. It costs more per token, so the affordable
+pattern is switching to it for a few hard questions and switching back.
 
 **A default is a starting point, not a recommendation.** Each provider's default
 is a reasonable middle of its own catalog, and none of them is chosen to be the
@@ -59,7 +72,9 @@ cheapest thing available. If you saved a key and never opened the picker, it is
 worth one look — the spread between models is wide enough that the choice
 matters more than almost anything else you can change.
 
-Prefer a direct DeepSeek key for sustained use. OpenRouter is what you add when
+Prefer a direct DeepSeek key for sustained use. **GLM** is the other direct
+option — a key from [Z.ai](https://z.ai/) reaching GLM's own models, defaulting
+to `glm-5.3-flash`, which also reads images. OpenRouter is what you add when
 you want the choice — one key reaching many vendors' catalogs, plus any model id
 they publish, so you are not limited to what one provider happens to offer. What
 that choice costs is then down to the model you make with it. See
@@ -85,13 +100,15 @@ while switching between models is safe.
 
 A reasonable pattern:
 
-- **`deepseek-v4-flash` at low thinking** for the bulk of it — locating things
-  in the lecture, definitions, "did lecture 3 cover this", reading the
-  [knowledge base](knowledge-bases.md) and quoting it back.
-- **A strong model at higher thinking** for the moment you are actually stuck on
-  the mathematics, or when you want a derivation worked through step by step.
-  Switching to one for a few hard questions rather than leaving it selected for a
-  whole session is what keeps it affordable.
+- **A flash model at low thinking** for the bulk of it — `deepseek-v4.1-flash`
+  or `glm-5.3-flash` — locating things in the lecture, definitions, "did lecture
+  3 cover this", reading the [knowledge base](knowledge-bases.md) and quoting it
+  back.
+- **A strong model at higher thinking** — `deepseek-v4-pro` on the same DeepSeek
+  key, or a frontier model through OpenRouter — for the moment you are actually
+  stuck on the mathematics, or when you want a derivation worked through step by
+  step. Switching to one for a few hard questions rather than leaving it
+  selected for a whole session is what keeps it affordable.
 
 You can change model mid-conversation; the change applies to the next message.
 

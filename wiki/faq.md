@@ -54,15 +54,18 @@ publishes one under your nickname, and you can switch it back.
 
 **Why does the AI chat need my own API key?**
 So there is no subscription and no markup — you pay the provider at cost. It
-supports DeepSeek and OpenRouter, plus Tavily for optional web search. See
-[bring your own key](bring-your-own-key.md).
+supports DeepSeek, GLM and OpenRouter for chat, plus Tavily for optional web
+search. See [bring your own key](bring-your-own-key.md).
 
 **Which model should I use?**
-`deepseek-v4-flash` with a DeepSeek key, going to DeepSeek directly — the
-recommendation as of **2026-08-26**, and the DeepSeek default. Check the date:
+`deepseek-v4.1-flash` with a DeepSeek key, going to DeepSeek directly — the
+recommendation as of **2026-09-13**, and the DeepSeek default. Check the date:
 providers reprice and replace models often, so this is a snapshot rather than a
-standing answer. Add OpenRouter when you want the choice — one key reaching many vendors' catalogs, and any model id
-they publish. See [models and thinking levels](models-and-thinking.md).
+standing answer, and the model recommended here in August has already been
+withdrawn. `glm-5.3-flash` on a GLM key from Z.ai is the equivalent starting
+point if you would rather register there. Add OpenRouter when you want the
+choice — one key reaching many vendors' catalogs, and any model id they publish.
+See [models and thinking levels](models-and-thinking.md).
 
 **Why do I keep getting rate-limited?**
 Because one question is usually several requests: the assistant reads a
@@ -73,10 +76,12 @@ questions, and check which tier your key is on. See
 [rate limits](bring-your-own-key.md#rate-limits).
 
 **Why is a Claude model more expensive?**
-Its price. `anthropic/claude-sonnet-5` is roughly $2 per million input tokens
-and $10 per million output, against `deepseek-v4-flash`'s $0.44 and $1.32. If a
-chat is costing more than you expected, the model you are on is usually the
-reason — open the picker and check.
+Its price. `anthropic/claude-sonnet-5` was roughly $2 per million input tokens
+and $10 per million output on 2026-08-26, and a flash model is a fraction of
+that — see
+[DeepSeek's pricing](https://api-docs.deepseek.com/quick_start/pricing) for what
+`deepseek-v4.1-flash` costs today. If a chat is costing more than you expected,
+the model you are on is usually the reason — open the picker and check.
 
 **Where is my key stored?**
 Encrypted on Cairn's servers, never in your browser and never sent back to it.

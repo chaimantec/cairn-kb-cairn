@@ -171,3 +171,55 @@ source in their own right since none of them appears on a public page.
       claim in `wiki/building-a-knowledge-base.md` that prose is the only
       representation of a figure a knowledge base will have — true before this
       step existed, false now.
+
+## Revision 2026-09-13 — GLM, and DeepSeek's new catalog
+
+- [x] **GLM is a third chat provider.** Students save a GLM key from
+      **Z.ai** and its models appear in the picker, defaulting to
+      `glm-5.3-flash`, which reads images. Added the provider row and an
+      on-ramp paragraph in `wiki/bring-your-own-key.md` (now "the four
+      providers", and every "one of the two chat providers" reads *three*), the
+      default row in `wiki/models-and-thinking.md`, and the provider lists in
+      `wiki/study-chat.md`, `wiki/install-and-setup.md`, `wiki/glossary.md`,
+      `wiki/faq.md`, `wiki/troubleshooting.md`, `wiki/privacy-and-data.md` and
+      `INDEX.md`. This is the same page set the reverted Gemini work touched —
+      see the open Gemini item above, which is unaffected.
+- [x] **`deepseek-v4-flash` is withdrawn.** Replaced by `deepseek-v4.1-flash`,
+      now the DeepSeek default and vision-capable, with `deepseek-v4-pro` above
+      it for questions a flash model does not do well. The recommendation moves
+      to `deepseek-v4.1-flash` and is re-dated **2026-09-13** everywhere it
+      appears. No id that no longer exists survives anywhere in `wiki/`.
+- [x] **Dropped the DeepSeek price table** in `wiki/models-and-thinking.md` and
+      the price comparison in `wiki/faq.md`. They quoted $0.44/$1.32 for a model
+      you can no longer buy, and no replacement figure has been verified. Per
+      `AGENTS.md`, a missing number beats a guessed one: both places now link to
+      DeepSeek's pricing. The `anthropic/claude-sonnet-5` figures stay as the
+      other end of the range, explicitly dated 2026-08-26.
+- [x] The off-peak claim survives — half price outside 01:00–04:00 and
+      06:00–10:00 UTC on weekdays is a DeepSeek platform policy rather than a
+      per-model rate, so the model change does not invalidate it.
+- [x] Vision is no longer OpenRouter-only. `wiki/images-in-chat.md` now says
+      both direct-provider defaults read images, so a student who never opens
+      the picker can still attach a screenshot.
+- [x] `sources.md` — the maker as a source again, dated 2026-09-13; a new
+      section on where the published documents lag. `kb.json` — the new source,
+      three revised caveats, `updated`.
+
+### Open — depends on Cairn's published documents, not the KB
+
+- [ ] **`raw/` predates GLM and is left alone.** The landing copy still reads
+      *"your own API key from DeepSeek or OpenRouter"* and the privacy policy's
+      third-party list still names only DeepSeek, OpenRouter and Tavily. Both
+      are verbatim copies, so editing them to add GLM would make them stop
+      matching what is published. `wiki/bring-your-own-key.md` and
+      `wiki/privacy-and-data.md` note the gap instead. When cairnstudy.com and
+      the policy are updated, re-copy both files and delete those two notes.
+- [ ] No per-token price for `deepseek-v4.1-flash`, `deepseek-v4-pro` or
+      `glm-5.3-flash` has been read from a provider's pricing page. Worth one
+      pass to restore a real cost comparison, which was the most concrete thing
+      on `wiki/models-and-thinking.md`.
+- [ ] Unverified, so undocumented: whether `deepseek-v4-pro` reads images, and
+      what GLM's catalog holds beyond `glm-5.3-flash`.
+- [ ] `deepseek-v4-flash-vision-exp` was reported deprecated on 2026-09-13, but
+      it appears nowhere in this repo or its git history — it was never
+      documented, so there was nothing to remove.

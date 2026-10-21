@@ -114,10 +114,13 @@ figure. So ask a question rather than just attaching:
 - "What is the x-axis on this plot actually measuring?"
 
 **Use a model that can read images.** Not every model can. The picker marks
-which ones do — see [models and thinking levels](models-and-thinking.md). Sending
-an image to a model without vision will not work. This applies to images you
-send; a model with no vision can still *show* you a slide from the knowledge
-base, since that is a link rather than something it has to look at.
+which ones do — see [models and thinking levels](models-and-thinking.md). Both
+direct-provider defaults read images, so if you have not changed model on a
+DeepSeek or GLM key (`deepseek-v4.1-flash`, `glm-5.3-flash`) you are already on
+one that works. Sending an image to a model without vision will not work. This
+applies to images you send; a model with no vision can still *show* you a slide
+from the knowledge base, since that is a link rather than something it has to
+look at.
 
 ## Related pages
 

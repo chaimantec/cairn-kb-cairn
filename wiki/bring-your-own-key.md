@@ -8,28 +8,40 @@ markup:
 you pay the model provider directly at cost — Cairn takes no cut and resells
 nothing."*
 
-## The three providers
+That copy names two chat providers because it predates the third. **GLM** has
+since been added and works the same way: your key, your account, paid at cost.
+
+## The four providers
 
 | Provider | For | Required? |
 |---|---|---|
-| **DeepSeek** | Chat models | One of the two chat providers is required |
-| **OpenRouter** | Chat models — a gateway to models from many vendors | One of the two chat providers is required |
+| **DeepSeek** | Chat models | One of the three chat providers is required |
+| **GLM** | Chat models, direct from Z.ai | One of the three chat providers is required |
+| **OpenRouter** | Chat models — a gateway to models from many vendors | One of the three chat providers is required |
 | **Tavily** | Web search and page reading | Optional. Without it, the chat has no web access. |
 
 Save at least one chat key or the composer stays disabled. Tavily is purely
 additive: with it, `web_search` and `web_fetch` appear; without it, they do not.
 
 **If you are only going to set up one, make it DeepSeek.** A DeepSeek key
-running `deepseek-v4-flash` is the recommendation for ordinary study use **as of
-2026-08-26** — dated, not permanent, since providers reprice and replace models
-faster than this page is revised. It is cheap, cheaper still off-peak, and its
-limits are generous enough that you will not think about them.
+running `deepseek-v4.1-flash` is the recommendation for ordinary study use **as
+of 2026-09-13** — dated, not permanent, since providers reprice and replace
+models faster than this page is revised. It is cheap, cheaper still off-peak,
+its limits are generous enough that you will not think about them, and it reads
+images. The same key also reaches `deepseek-v4-pro` for the harder questions.
+
+**GLM is the other direct option.** You get the key from
+[Z.ai](https://z.ai/) rather than from DeepSeek, and Cairn treats it like any
+other chat provider: save it in Settings and its models appear in the picker,
+defaulting to `glm-5.3-flash`, which also reads images. It is worth having if
+you would rather register with Z.ai, or simply want a second key to fall back
+on when one provider is having a bad afternoon.
 
 **OpenRouter is what you add when you want the choice** — one key reaching many
 vendors' catalogs, plus any model id OpenRouter publishes, so you can pick on
 whatever grounds matter to you that day: price, speed, whether it reads
-[images](images-in-chat.md), or simply a model you would rather use. Saving both
-and switching per question is a perfectly good setup. See
+[images](images-in-chat.md), or simply a model you would rather use. Saving
+more than one and switching per question is a perfectly good setup. See
 [models and thinking levels](models-and-thinking.md).
 
 Getting a key means signing up with that provider and creating one in their
@@ -105,8 +117,8 @@ lost. What helps, roughly in order:
   OpenRouter balance, so topping up will not clear it — but switching vendor
   generally will.
 
-**On DeepSeek this rarely comes up** for one person studying, which is part of
-why it is the recommendation.
+**On a direct DeepSeek or GLM key this rarely comes up** for one person
+studying, which is part of why DeepSeek is the recommendation.
 
 ## If the provider rejects the request
 

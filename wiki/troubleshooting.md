@@ -41,8 +41,8 @@ sign in again; Cairn keeps working locally until you do. Nothing is lost.
 Two possible reasons, in order:
 
 1. **You are not signed in.** The chat requires an account.
-2. **No API key is saved.** Add a DeepSeek or OpenRouter key in **Settings → AI
-   chat**. See [bring your own key](bring-your-own-key.md).
+2. **No API key is saved.** Add a DeepSeek, GLM or OpenRouter key in
+   **Settings → AI chat**. See [bring your own key](bring-your-own-key.md).
 
 ## The chat gives an error
 
@@ -66,8 +66,9 @@ more than an order of magnitude.
 Check the model picker first. Each provider has a default that you get if you
 never opened the picker, and none of them is chosen for being the cheapest —
 the spread across the catalog is more than an order of magnitude, so this is
-usually the largest single thing you can change. `deepseek-v4-flash` on a
-DeepSeek key is the cheap end. See [what it costs](bring-your-own-key.md) and
+usually the largest single thing you can change. `deepseek-v4.1-flash` on a
+DeepSeek key, or `glm-5.3-flash` on a GLM key, is the cheap end. See
+[what it costs](bring-your-own-key.md) and
 [models and thinking levels](models-and-thinking.md).
 
 Cairn cannot see your spend — the usage readout is an estimate, and it is wrong

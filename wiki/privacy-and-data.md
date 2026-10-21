@@ -80,8 +80,11 @@ go to Tavily. If the course has a [knowledge base](knowledge-bases.md), its
 public files are fetched from GitHub.
 
 Those providers handle that data under their own privacy policies. The relevant
-ones are DeepSeek, OpenRouter — which forwards to whichever underlying model you
-select — Tavily, and GitHub.
+ones are DeepSeek, GLM — reached through Z.ai — OpenRouter, which forwards to
+whichever underlying model you select, Tavily, and GitHub. The published
+policy's list of third parties still names only DeepSeek, OpenRouter and Tavily,
+because GLM was added to the extension after that policy was last updated; if
+you use a GLM key, read Z.ai's own policy for what it does with that traffic.
 
 **Your API key** is encrypted at rest on Cairn's servers and never sent back to
 your browser. The policy is candid about the limits: this defends against a
